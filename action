@@ -1,0 +1,3045 @@
+24 RETURN:error
+24 >=:error
+24 <=:error
+24 DOT:reduce declarator_list -> declarator
+24 $:error
+24 ):error
+24 (:error
+24 +:error
+24 *:error
+24 -:error
+24 /:error
+24 SEM:reduce declarator_list -> declarator
+24 =:shift 33
+24 <:error
+24 >:error
+24 FOR:error
+24 ELSE:error
+24 STR:error
+24 [:error
+24 ]:error
+24 ID:error
+24 IF:error
+24 AND:error
+24 DIGIT:error
+24 INT:error
+24 FLOAT:error
+24 {:error
+24 }:error
+24 INC:error
+25 RETURN:error
+25 >=:error
+25 <=:error
+25 DOT:shift 34
+25 $:error
+25 ):error
+25 (:error
+25 +:error
+25 *:error
+25 -:error
+25 /:error
+25 SEM:shift 35
+25 =:error
+25 <:error
+25 >:error
+25 FOR:error
+25 ELSE:error
+25 STR:error
+25 [:error
+25 ]:error
+25 ID:error
+25 IF:error
+25 AND:error
+25 DIGIT:error
+25 INT:error
+25 FLOAT:error
+25 {:error
+25 }:error
+25 INC:error
+26 RETURN:error
+26 >=:error
+26 <=:error
+26 DOT:reduce declarator -> ID
+26 $:error
+26 ):reduce declarator -> ID
+26 (:error
+26 +:error
+26 *:error
+26 -:error
+26 /:error
+26 SEM:reduce declarator -> ID
+26 =:reduce declarator -> ID
+26 <:error
+26 >:error
+26 FOR:error
+26 ELSE:error
+26 STR:error
+26 [:shift 29
+26 ]:error
+26 ID:error
+26 IF:error
+26 AND:error
+26 DIGIT:error
+26 INT:error
+26 FLOAT:error
+26 {:error
+26 }:error
+26 INC:error
+27 RETURN:error
+27 >=:error
+27 <=:error
+27 DOT:error
+27 $:error
+27 ):error
+27 (:error
+27 +:error
+27 *:error
+27 -:error
+27 /:error
+27 SEM:error
+27 =:error
+27 <:error
+27 >:error
+27 FOR:error
+27 ELSE:error
+27 STR:error
+27 [:error
+27 ]:error
+27 ID:shift 40
+27 IF:error
+27 AND:error
+27 DIGIT:shift 41
+27 INT:error
+27 FLOAT:error
+27 {:error
+27 }:error
+27 INC:error
+20 RETURN:error
+20 >=:error
+20 <=:error
+20 DOT:error
+20 $:error
+20 ):error
+20 (:shift 31
+20 +:error
+20 *:error
+20 -:error
+20 /:error
+20 SEM:error
+20 =:error
+20 <:error
+20 >:error
+20 FOR:error
+20 ELSE:error
+20 STR:error
+20 [:error
+20 ]:error
+20 ID:error
+20 IF:error
+20 AND:error
+20 DIGIT:error
+20 INT:error
+20 FLOAT:error
+20 {:error
+20 }:error
+20 INC:error
+21 RETURN:error
+21 >=:error
+21 <=:error
+21 DOT:error
+21 $:error
+21 ):error
+21 (:error
+21 +:error
+21 *:error
+21 -:error
+21 /:error
+21 SEM:error
+21 =:error
+21 <:error
+21 >:error
+21 FOR:error
+21 ELSE:error
+21 STR:error
+21 [:error
+21 ]:error
+21 ID:error
+21 IF:error
+21 AND:error
+21 DIGIT:shift 32
+21 INT:error
+21 FLOAT:error
+21 {:error
+21 }:error
+21 INC:error
+22 RETURN:reduce expression_list -> expression_list expression
+22 >=:error
+22 <=:error
+22 DOT:error
+22 $:error
+22 ):error
+22 (:error
+22 +:error
+22 *:error
+22 -:error
+22 /:error
+22 SEM:error
+22 =:error
+22 <:error
+22 >:error
+22 FOR:reduce expression_list -> expression_list expression
+22 ELSE:error
+22 STR:error
+22 [:error
+22 ]:error
+22 ID:reduce expression_list -> expression_list expression
+22 IF:reduce expression_list -> expression_list expression
+22 AND:error
+22 DIGIT:error
+22 INT:reduce expression_list -> expression_list expression
+22 FLOAT:reduce expression_list -> expression_list expression
+22 {:error
+22 }:reduce expression_list -> expression_list expression
+22 INC:error
+23 RETURN:error
+23 >=:error
+23 <=:error
+23 DOT:error
+23 $:reduce p -> INT ID ( ) { expression_list }
+23 ):error
+23 (:error
+23 +:error
+23 *:error
+23 -:error
+23 /:error
+23 SEM:error
+23 =:error
+23 <:error
+23 >:error
+23 FOR:error
+23 ELSE:error
+23 STR:error
+23 [:error
+23 ]:error
+23 ID:error
+23 IF:error
+23 AND:error
+23 DIGIT:error
+23 INT:error
+23 FLOAT:error
+23 {:error
+23 }:error
+23 INC:error
+28 RETURN:error
+28 >=:error
+28 <=:error
+28 DOT:error
+28 $:error
+28 ):error
+28 (:error
+28 +:error
+28 *:error
+28 -:error
+28 /:error
+28 SEM:error
+28 =:error
+28 <:error
+28 >:error
+28 FOR:error
+28 ELSE:error
+28 STR:shift 42
+28 [:error
+28 ]:error
+28 ID:error
+28 IF:error
+28 AND:error
+28 DIGIT:error
+28 INT:error
+28 FLOAT:error
+28 {:error
+28 }:error
+28 INC:error
+29 RETURN:error
+29 >=:error
+29 <=:error
+29 DOT:error
+29 $:error
+29 ):error
+29 (:error
+29 +:error
+29 *:error
+29 -:error
+29 /:error
+29 SEM:error
+29 =:error
+29 <:error
+29 >:error
+29 FOR:error
+29 ELSE:error
+29 STR:error
+29 [:error
+29 ]:error
+29 ID:error
+29 IF:error
+29 AND:error
+29 DIGIT:shift 43
+29 INT:error
+29 FLOAT:error
+29 {:error
+29 }:error
+29 INC:error
+0 RETURN:error
+0 >=:error
+0 <=:error
+0 DOT:error
+0 $:error
+0 ):error
+0 (:error
+0 +:error
+0 *:error
+0 -:error
+0 /:error
+0 SEM:error
+0 =:error
+0 <:error
+0 >:error
+0 FOR:error
+0 ELSE:error
+0 STR:error
+0 [:error
+0 ]:error
+0 ID:error
+0 IF:error
+0 AND:error
+0 DIGIT:error
+0 INT:shift 2
+0 FLOAT:error
+0 {:error
+0 }:error
+0 INC:error
+4 RETURN:error
+4 >=:error
+4 <=:error
+4 DOT:error
+4 $:error
+4 ):shift 5
+4 (:error
+4 +:error
+4 *:error
+4 -:error
+4 /:error
+4 SEM:error
+4 =:error
+4 <:error
+4 >:error
+4 FOR:error
+4 ELSE:error
+4 STR:error
+4 [:error
+4 ]:error
+4 ID:error
+4 IF:error
+4 AND:error
+4 DIGIT:error
+4 INT:error
+4 FLOAT:error
+4 {:error
+4 }:error
+4 INC:error
+8 RETURN:shift 21
+8 >=:error
+8 <=:error
+8 DOT:error
+8 $:error
+8 ):error
+8 (:error
+8 +:error
+8 *:error
+8 -:error
+8 /:error
+8 SEM:error
+8 =:error
+8 <:error
+8 >:error
+8 FOR:shift 20
+8 ELSE:error
+8 STR:error
+8 [:error
+8 ]:error
+8 ID:shift 16
+8 IF:shift 19
+8 AND:error
+8 DIGIT:error
+8 INT:shift 17
+8 FLOAT:shift 18
+8 {:error
+8 }:shift 23
+8 INC:error
+59 RETURN:error
+59 >=:error
+59 <=:error
+59 DOT:error
+59 $:error
+59 ):error
+59 (:error
+59 +:error
+59 *:error
+59 -:error
+59 /:error
+59 SEM:error
+59 =:error
+59 <:error
+59 >:error
+59 FOR:error
+59 ELSE:error
+59 STR:error
+59 [:error
+59 ]:error
+59 ID:shift 40
+59 IF:error
+59 AND:error
+59 DIGIT:shift 41
+59 INT:error
+59 FLOAT:error
+59 {:error
+59 }:error
+59 INC:error
+58 RETURN:error
+58 >=:reduce declarator -> ID [ DIGIT ]
+58 <=:reduce declarator -> ID [ DIGIT ]
+58 DOT:reduce declarator -> ID [ DIGIT ]
+58 $:error
+58 ):reduce declarator -> ID [ DIGIT ]
+58 (:error
+58 +:reduce declarator -> ID [ DIGIT ]
+58 *:reduce declarator -> ID [ DIGIT ]
+58 -:reduce declarator -> ID [ DIGIT ]
+58 /:reduce declarator -> ID [ DIGIT ]
+58 SEM:reduce declarator -> ID [ DIGIT ]
+58 =:reduce declarator -> ID [ DIGIT ]
+58 <:reduce declarator -> ID [ DIGIT ]
+58 >:reduce declarator -> ID [ DIGIT ]
+58 FOR:error
+58 ELSE:error
+58 STR:error
+58 [:error
+58 ]:error
+58 ID:error
+58 IF:error
+58 AND:error
+58 DIGIT:error
+58 INT:error
+58 FLOAT:error
+58 {:error
+58 }:error
+58 INC:error
+55 RETURN:error
+55 >=:error
+55 <=:error
+55 DOT:error
+55 $:error
+55 ):error
+55 (:error
+55 +:error
+55 *:error
+55 -:error
+55 /:error
+55 SEM:error
+55 =:error
+55 <:error
+55 >:error
+55 FOR:error
+55 ELSE:error
+55 STR:error
+55 [:error
+55 ]:error
+55 ID:shift 71
+55 IF:error
+55 AND:error
+55 DIGIT:shift 43
+55 INT:error
+55 FLOAT:error
+55 {:error
+55 }:error
+55 INC:error
+54 RETURN:error
+54 >=:error
+54 <=:error
+54 DOT:error
+54 $:error
+54 ):error
+54 (:error
+54 +:error
+54 *:error
+54 -:error
+54 /:error
+54 SEM:error
+54 =:error
+54 <:error
+54 >:error
+54 FOR:error
+54 ELSE:error
+54 STR:error
+54 [:error
+54 ]:error
+54 ID:shift 40
+54 IF:error
+54 AND:error
+54 DIGIT:shift 41
+54 INT:error
+54 FLOAT:error
+54 {:error
+54 }:error
+54 INC:error
+57 RETURN:error
+57 >=:error
+57 <=:error
+57 DOT:error
+57 $:error
+57 ):error
+57 (:error
+57 +:error
+57 *:error
+57 -:error
+57 /:error
+57 SEM:shift 75
+57 =:error
+57 <:error
+57 >:error
+57 FOR:error
+57 ELSE:error
+57 STR:error
+57 [:error
+57 ]:error
+57 ID:error
+57 IF:error
+57 AND:error
+57 DIGIT:error
+57 INT:error
+57 FLOAT:error
+57 {:error
+57 }:error
+57 INC:error
+56 RETURN:error
+56 >=:error
+56 <=:error
+56 DOT:error
+56 $:error
+56 ):error
+56 (:error
+56 +:error
+56 *:error
+56 -:error
+56 /:error
+56 SEM:error
+56 =:error
+56 <:error
+56 >:error
+56 FOR:error
+56 ELSE:error
+56 STR:error
+56 [:error
+56 ]:error
+56 ID:shift 26
+56 IF:error
+56 AND:shift 74
+56 DIGIT:error
+56 INT:error
+56 FLOAT:error
+56 {:error
+56 }:error
+56 INC:error
+51 RETURN:error
+51 >=:error
+51 <=:error
+51 DOT:error
+51 $:error
+51 ):error
+51 (:error
+51 +:error
+51 *:error
+51 -:error
+51 /:error
+51 SEM:error
+51 =:error
+51 <:error
+51 >:error
+51 FOR:error
+51 ELSE:error
+51 STR:error
+51 [:error
+51 ]:error
+51 ID:shift 40
+51 IF:error
+51 AND:error
+51 DIGIT:shift 41
+51 INT:error
+51 FLOAT:error
+51 {:error
+51 }:error
+51 INC:error
+50 RETURN:error
+50 >=:error
+50 <=:error
+50 DOT:error
+50 $:error
+50 ):error
+50 (:error
+50 +:error
+50 *:error
+50 -:error
+50 /:error
+50 SEM:error
+50 =:error
+50 <:error
+50 >:error
+50 FOR:error
+50 ELSE:error
+50 STR:error
+50 [:error
+50 ]:error
+50 ID:shift 40
+50 IF:error
+50 AND:error
+50 DIGIT:shift 41
+50 INT:error
+50 FLOAT:error
+50 {:error
+50 }:error
+50 INC:error
+53 RETURN:error
+53 >=:error
+53 <=:error
+53 DOT:error
+53 $:error
+53 ):error
+53 (:error
+53 +:error
+53 *:error
+53 -:error
+53 /:error
+53 SEM:error
+53 =:error
+53 <:error
+53 >:error
+53 FOR:error
+53 ELSE:error
+53 STR:error
+53 [:error
+53 ]:error
+53 ID:shift 40
+53 IF:error
+53 AND:error
+53 DIGIT:shift 41
+53 INT:error
+53 FLOAT:error
+53 {:error
+53 }:error
+53 INC:error
+52 RETURN:reduce assignment_e -> declarator = add_e SEM
+52 >=:error
+52 <=:error
+52 DOT:error
+52 $:error
+52 ):error
+52 (:error
+52 +:error
+52 *:error
+52 -:error
+52 /:error
+52 SEM:error
+52 =:error
+52 <:error
+52 >:error
+52 FOR:reduce assignment_e -> declarator = add_e SEM
+52 ELSE:error
+52 STR:error
+52 [:error
+52 ]:error
+52 ID:reduce assignment_e -> declarator = add_e SEM
+52 IF:reduce assignment_e -> declarator = add_e SEM
+52 AND:error
+52 DIGIT:reduce assignment_e -> declarator = add_e SEM
+52 INT:reduce assignment_e -> declarator = add_e SEM
+52 FLOAT:reduce assignment_e -> declarator = add_e SEM
+52 {:error
+52 }:reduce assignment_e -> declarator = add_e SEM
+52 INC:error
+88 RETURN:error
+88 >=:error
+88 <=:error
+88 DOT:error
+88 $:error
+88 ):shift 95
+88 (:error
+88 +:error
+88 *:error
+88 -:error
+88 /:error
+88 SEM:error
+88 =:error
+88 <:error
+88 >:error
+88 FOR:error
+88 ELSE:error
+88 STR:error
+88 [:error
+88 ]:error
+88 ID:error
+88 IF:error
+88 AND:error
+88 DIGIT:error
+88 INT:error
+88 FLOAT:error
+88 {:error
+88 }:error
+88 INC:error
+89 RETURN:error
+89 >=:error
+89 <=:error
+89 DOT:error
+89 $:error
+89 ):error
+89 (:error
+89 +:error
+89 *:error
+89 -:error
+89 /:error
+89 SEM:error
+89 =:error
+89 <:error
+89 >:error
+89 FOR:error
+89 ELSE:error
+89 STR:error
+89 [:error
+89 ]:error
+89 ID:error
+89 IF:error
+89 AND:error
+89 DIGIT:error
+89 INT:error
+89 FLOAT:error
+89 {:error
+89 }:error
+89 INC:shift 96
+82 RETURN:error
+82 >=:error
+82 <=:error
+82 DOT:error
+82 $:error
+82 ):error
+82 (:error
+82 +:error
+82 *:error
+82 -:error
+82 /:error
+82 SEM:error
+82 =:error
+82 <:error
+82 >:error
+82 FOR:error
+82 ELSE:error
+82 STR:error
+82 [:error
+82 ]:error
+82 ID:error
+82 IF:error
+82 AND:error
+82 DIGIT:shift 90
+82 INT:error
+82 FLOAT:error
+82 {:error
+82 }:error
+82 INC:error
+83 RETURN:error
+83 >=:error
+83 <=:error
+83 DOT:error
+83 $:error
+83 ):error
+83 (:error
+83 +:error
+83 *:error
+83 -:error
+83 /:error
+83 SEM:shift 91
+83 =:error
+83 <:error
+83 >:error
+83 FOR:error
+83 ELSE:error
+83 STR:error
+83 [:error
+83 ]:error
+83 ID:error
+83 IF:error
+83 AND:error
+83 DIGIT:error
+83 INT:error
+83 FLOAT:error
+83 {:error
+83 }:error
+83 INC:error
+80 RETURN:shift 21
+80 >=:error
+80 <=:error
+80 DOT:error
+80 $:error
+80 ):error
+80 (:error
+80 +:error
+80 *:error
+80 -:error
+80 /:error
+80 SEM:error
+80 =:error
+80 <:error
+80 >:error
+80 FOR:shift 20
+80 ELSE:error
+80 STR:error
+80 [:error
+80 ]:error
+80 ID:shift 16
+80 IF:shift 19
+80 AND:error
+80 DIGIT:error
+80 INT:shift 17
+80 FLOAT:shift 18
+80 {:error
+80 }:error
+80 INC:error
+81 RETURN:error
+81 >=:error
+81 <=:error
+81 DOT:error
+81 $:error
+81 ):error
+81 (:error
+81 +:error
+81 *:error
+81 -:error
+81 /:error
+81 SEM:error
+81 =:error
+81 <:error
+81 >:error
+81 FOR:error
+81 ELSE:error
+81 STR:error
+81 [:error
+81 ]:error
+81 ID:shift 89
+81 IF:error
+81 AND:error
+81 DIGIT:error
+81 INT:error
+81 FLOAT:error
+81 {:error
+81 }:error
+81 INC:error
+86 RETURN:error
+86 >=:error
+86 <=:error
+86 DOT:error
+86 $:error
+86 ):shift 93
+86 (:error
+86 +:error
+86 *:error
+86 -:error
+86 /:error
+86 SEM:error
+86 =:error
+86 <:error
+86 >:error
+86 FOR:error
+86 ELSE:error
+86 STR:error
+86 [:error
+86 ]:error
+86 ID:error
+86 IF:error
+86 AND:error
+86 DIGIT:error
+86 INT:error
+86 FLOAT:error
+86 {:error
+86 }:error
+86 INC:error
+87 RETURN:shift 21
+87 >=:error
+87 <=:error
+87 DOT:error
+87 $:error
+87 ):error
+87 (:error
+87 +:error
+87 *:error
+87 -:error
+87 /:error
+87 SEM:error
+87 =:error
+87 <:error
+87 >:error
+87 FOR:shift 20
+87 ELSE:error
+87 STR:error
+87 [:error
+87 ]:error
+87 ID:shift 16
+87 IF:shift 19
+87 AND:error
+87 DIGIT:error
+87 INT:shift 17
+87 FLOAT:shift 18
+87 {:error
+87 }:shift 94
+87 INC:error
+84 RETURN:error
+84 >=:reduce cast_e -> ID [ ID ]
+84 <=:reduce cast_e -> ID [ ID ]
+84 DOT:error
+84 $:error
+84 ):reduce cast_e -> ID [ ID ]
+84 (:error
+84 +:reduce cast_e -> ID [ ID ]
+84 *:reduce cast_e -> ID [ ID ]
+84 -:reduce cast_e -> ID [ ID ]
+84 /:reduce cast_e -> ID [ ID ]
+84 SEM:reduce cast_e -> ID [ ID ]
+84 =:error
+84 <:reduce cast_e -> ID [ ID ]
+84 >:reduce cast_e -> ID [ ID ]
+84 FOR:error
+84 ELSE:error
+84 STR:error
+84 [:error
+84 ]:error
+84 ID:error
+84 IF:error
+84 AND:error
+84 DIGIT:error
+84 INT:error
+84 FLOAT:error
+84 {:error
+84 }:error
+84 INC:error
+85 RETURN:error
+85 >=:error
+85 <=:error
+85 DOT:error
+85 $:error
+85 ):error
+85 (:error
+85 +:error
+85 *:error
+85 -:error
+85 /:error
+85 SEM:shift 92
+85 =:error
+85 <:error
+85 >:error
+85 FOR:error
+85 ELSE:error
+85 STR:error
+85 [:error
+85 ]:error
+85 ID:error
+85 IF:error
+85 AND:error
+85 DIGIT:error
+85 INT:error
+85 FLOAT:error
+85 {:error
+85 }:error
+85 INC:error
+3 RETURN:error
+3 >=:error
+3 <=:error
+3 DOT:error
+3 $:error
+3 ):error
+3 (:shift 4
+3 +:error
+3 *:error
+3 -:error
+3 /:error
+3 SEM:error
+3 =:error
+3 <:error
+3 >:error
+3 FOR:error
+3 ELSE:error
+3 STR:error
+3 [:error
+3 ]:error
+3 ID:error
+3 IF:error
+3 AND:error
+3 DIGIT:error
+3 INT:error
+3 FLOAT:error
+3 {:error
+3 }:error
+3 INC:error
+7 RETURN:reduce expression_list -> expression
+7 >=:error
+7 <=:error
+7 DOT:error
+7 $:error
+7 ):error
+7 (:error
+7 +:error
+7 *:error
+7 -:error
+7 /:error
+7 SEM:error
+7 =:error
+7 <:error
+7 >:error
+7 FOR:reduce expression_list -> expression
+7 ELSE:error
+7 STR:error
+7 [:error
+7 ]:error
+7 ID:reduce expression_list -> expression
+7 IF:reduce expression_list -> expression
+7 AND:error
+7 DIGIT:error
+7 INT:reduce expression_list -> expression
+7 FLOAT:reduce expression_list -> expression
+7 {:error
+7 }:reduce expression_list -> expression
+7 INC:error
+102 RETURN:shift 21
+102 >=:error
+102 <=:error
+102 DOT:error
+102 $:error
+102 ):error
+102 (:error
+102 +:error
+102 *:error
+102 -:error
+102 /:error
+102 SEM:error
+102 =:error
+102 <:error
+102 >:error
+102 FOR:shift 20
+102 ELSE:error
+102 STR:error
+102 [:error
+102 ]:error
+102 ID:shift 16
+102 IF:shift 19
+102 AND:error
+102 DIGIT:error
+102 INT:shift 17
+102 FLOAT:shift 18
+102 {:error
+102 }:shift 104
+102 INC:error
+103 RETURN:reduce iterator_e -> FOR ( assignment_e bool_e SEM inc_e ) { expression_list }
+103 >=:error
+103 <=:error
+103 DOT:error
+103 $:error
+103 ):error
+103 (:error
+103 +:error
+103 *:error
+103 -:error
+103 /:error
+103 SEM:error
+103 =:error
+103 <:error
+103 >:error
+103 FOR:reduce iterator_e -> FOR ( assignment_e bool_e SEM inc_e ) { expression_list }
+103 ELSE:error
+103 STR:error
+103 [:error
+103 ]:error
+103 ID:reduce iterator_e -> FOR ( assignment_e bool_e SEM inc_e ) { expression_list }
+103 IF:reduce iterator_e -> FOR ( assignment_e bool_e SEM inc_e ) { expression_list }
+103 AND:error
+103 DIGIT:error
+103 INT:reduce iterator_e -> FOR ( assignment_e bool_e SEM inc_e ) { expression_list }
+103 FLOAT:reduce iterator_e -> FOR ( assignment_e bool_e SEM inc_e ) { expression_list }
+103 {:error
+103 }:reduce iterator_e -> FOR ( assignment_e bool_e SEM inc_e ) { expression_list }
+103 INC:error
+100 RETURN:shift 21
+100 >=:error
+100 <=:error
+100 DOT:error
+100 $:error
+100 ):error
+100 (:error
+100 +:error
+100 *:error
+100 -:error
+100 /:error
+100 SEM:error
+100 =:error
+100 <:error
+100 >:error
+100 FOR:shift 20
+100 ELSE:error
+100 STR:error
+100 [:error
+100 ]:error
+100 ID:shift 16
+100 IF:shift 19
+100 AND:error
+100 DIGIT:error
+100 INT:shift 17
+100 FLOAT:shift 18
+100 {:error
+100 }:error
+100 INC:error
+101 RETURN:shift 21
+101 >=:error
+101 <=:error
+101 DOT:error
+101 $:error
+101 ):error
+101 (:error
+101 +:error
+101 *:error
+101 -:error
+101 /:error
+101 SEM:error
+101 =:error
+101 <:error
+101 >:error
+101 FOR:shift 20
+101 ELSE:error
+101 STR:error
+101 [:error
+101 ]:error
+101 ID:shift 16
+101 IF:shift 19
+101 AND:error
+101 DIGIT:error
+101 INT:shift 17
+101 FLOAT:shift 18
+101 {:error
+101 }:shift 103
+101 INC:error
+104 RETURN:reduce select_e -> IF ( bool_e ) { expression_list } ELSE { expression_list }
+104 >=:error
+104 <=:error
+104 DOT:error
+104 $:error
+104 ):error
+104 (:error
+104 +:error
+104 *:error
+104 -:error
+104 /:error
+104 SEM:error
+104 =:error
+104 <:error
+104 >:error
+104 FOR:reduce select_e -> IF ( bool_e ) { expression_list } ELSE { expression_list }
+104 ELSE:error
+104 STR:error
+104 [:error
+104 ]:error
+104 ID:reduce select_e -> IF ( bool_e ) { expression_list } ELSE { expression_list }
+104 IF:reduce select_e -> IF ( bool_e ) { expression_list } ELSE { expression_list }
+104 AND:error
+104 DIGIT:error
+104 INT:reduce select_e -> IF ( bool_e ) { expression_list } ELSE { expression_list }
+104 FLOAT:reduce select_e -> IF ( bool_e ) { expression_list } ELSE { expression_list }
+104 {:error
+104 }:reduce select_e -> IF ( bool_e ) { expression_list } ELSE { expression_list }
+104 INC:error
+39 RETURN:error
+39 >=:error
+39 <=:error
+39 DOT:error
+39 $:error
+39 ):error
+39 (:error
+39 +:reduce multi_e -> cast_e
+39 *:reduce multi_e -> cast_e
+39 -:reduce multi_e -> cast_e
+39 /:reduce multi_e -> cast_e
+39 SEM:reduce multi_e -> cast_e
+39 =:error
+39 <:error
+39 >:error
+39 FOR:error
+39 ELSE:error
+39 STR:error
+39 [:error
+39 ]:error
+39 ID:error
+39 IF:error
+39 AND:error
+39 DIGIT:error
+39 INT:error
+39 FLOAT:error
+39 {:error
+39 }:error
+39 INC:error
+38 RETURN:error
+38 >=:error
+38 <=:error
+38 DOT:error
+38 $:error
+38 ):error
+38 (:error
+38 +:reduce add_e -> multi_e
+38 *:shift 53
+38 -:reduce add_e -> multi_e
+38 /:shift 54
+38 SEM:reduce add_e -> multi_e
+38 =:error
+38 <:error
+38 >:error
+38 FOR:error
+38 ELSE:error
+38 STR:error
+38 [:error
+38 ]:error
+38 ID:error
+38 IF:error
+38 AND:error
+38 DIGIT:error
+38 INT:error
+38 FLOAT:error
+38 {:error
+38 }:error
+38 INC:error
+33 RETURN:error
+33 >=:error
+33 <=:error
+33 DOT:error
+33 $:error
+33 ):error
+33 (:error
+33 +:error
+33 *:error
+33 -:error
+33 /:error
+33 SEM:error
+33 =:error
+33 <:error
+33 >:error
+33 FOR:error
+33 ELSE:error
+33 STR:error
+33 [:error
+33 ]:error
+33 ID:error
+33 IF:error
+33 AND:error
+33 DIGIT:error
+33 INT:error
+33 FLOAT:error
+33 {:shift 48
+33 }:error
+33 INC:error
+32 RETURN:error
+32 >=:error
+32 <=:error
+32 DOT:error
+32 $:error
+32 ):error
+32 (:error
+32 +:error
+32 *:error
+32 -:error
+32 /:error
+32 SEM:shift 47
+32 =:error
+32 <:error
+32 >:error
+32 FOR:error
+32 ELSE:error
+32 STR:error
+32 [:error
+32 ]:error
+32 ID:error
+32 IF:error
+32 AND:error
+32 DIGIT:error
+32 INT:error
+32 FLOAT:error
+32 {:error
+32 }:error
+32 INC:error
+31 RETURN:error
+31 >=:error
+31 <=:error
+31 DOT:error
+31 $:error
+31 ):error
+31 (:error
+31 +:error
+31 *:error
+31 -:error
+31 /:error
+31 SEM:error
+31 =:error
+31 <:error
+31 >:error
+31 FOR:error
+31 ELSE:error
+31 STR:error
+31 [:error
+31 ]:error
+31 ID:shift 26
+31 IF:error
+31 AND:error
+31 DIGIT:error
+31 INT:error
+31 FLOAT:error
+31 {:error
+31 }:error
+31 INC:error
+30 RETURN:error
+30 >=:error
+30 <=:error
+30 DOT:error
+30 $:error
+30 ):error
+30 (:error
+30 +:error
+30 *:error
+30 -:error
+30 /:error
+30 SEM:error
+30 =:error
+30 <:error
+30 >:error
+30 FOR:error
+30 ELSE:error
+30 STR:error
+30 [:error
+30 ]:error
+30 ID:shift 40
+30 IF:error
+30 AND:error
+30 DIGIT:shift 41
+30 INT:error
+30 FLOAT:error
+30 {:error
+30 }:error
+30 INC:error
+37 RETURN:error
+37 >=:error
+37 <=:error
+37 DOT:error
+37 $:error
+37 ):error
+37 (:error
+37 +:shift 50
+37 *:error
+37 -:shift 51
+37 /:error
+37 SEM:shift 52
+37 =:error
+37 <:error
+37 >:error
+37 FOR:error
+37 ELSE:error
+37 STR:error
+37 [:error
+37 ]:error
+37 ID:error
+37 IF:error
+37 AND:error
+37 DIGIT:error
+37 INT:error
+37 FLOAT:error
+37 {:error
+37 }:error
+37 INC:error
+36 RETURN:error
+36 >=:reduce cast_e -> declarator
+36 <=:reduce cast_e -> declarator
+36 DOT:error
+36 $:error
+36 ):reduce cast_e -> declarator
+36 (:error
+36 +:reduce cast_e -> declarator
+36 *:reduce cast_e -> declarator
+36 -:reduce cast_e -> declarator
+36 /:reduce cast_e -> declarator
+36 SEM:reduce cast_e -> declarator
+36 =:error
+36 <:reduce cast_e -> declarator
+36 >:reduce cast_e -> declarator
+36 FOR:error
+36 ELSE:error
+36 STR:error
+36 [:error
+36 ]:error
+36 ID:error
+36 IF:error
+36 AND:error
+36 DIGIT:error
+36 INT:error
+36 FLOAT:error
+36 {:error
+36 }:error
+36 INC:error
+35 RETURN:reduce declarator_e -> type declarator_list SEM
+35 >=:error
+35 <=:error
+35 DOT:error
+35 $:error
+35 ):error
+35 (:error
+35 +:error
+35 *:error
+35 -:error
+35 /:error
+35 SEM:error
+35 =:error
+35 <:error
+35 >:error
+35 FOR:reduce declarator_e -> type declarator_list SEM
+35 ELSE:error
+35 STR:error
+35 [:error
+35 ]:error
+35 ID:reduce declarator_e -> type declarator_list SEM
+35 IF:reduce declarator_e -> type declarator_list SEM
+35 AND:error
+35 DIGIT:error
+35 INT:reduce declarator_e -> type declarator_list SEM
+35 FLOAT:reduce declarator_e -> type declarator_list SEM
+35 {:error
+35 }:reduce declarator_e -> type declarator_list SEM
+35 INC:error
+34 RETURN:error
+34 >=:error
+34 <=:error
+34 DOT:error
+34 $:error
+34 ):error
+34 (:error
+34 +:error
+34 *:error
+34 -:error
+34 /:error
+34 SEM:error
+34 =:error
+34 <:error
+34 >:error
+34 FOR:error
+34 ELSE:error
+34 STR:error
+34 [:error
+34 ]:error
+34 ID:shift 26
+34 IF:error
+34 AND:error
+34 DIGIT:error
+34 INT:error
+34 FLOAT:error
+34 {:error
+34 }:error
+34 INC:error
+60 RETURN:error
+60 >=:error
+60 <=:error
+60 DOT:error
+60 $:error
+60 ):error
+60 (:error
+60 +:error
+60 *:error
+60 -:error
+60 /:error
+60 SEM:error
+60 =:error
+60 <:error
+60 >:error
+60 FOR:error
+60 ELSE:error
+60 STR:error
+60 [:error
+60 ]:error
+60 ID:shift 40
+60 IF:error
+60 AND:error
+60 DIGIT:shift 41
+60 INT:error
+60 FLOAT:error
+60 {:error
+60 }:error
+60 INC:error
+61 RETURN:error
+61 >=:error
+61 <=:error
+61 DOT:error
+61 $:error
+61 ):error
+61 (:error
+61 +:error
+61 *:error
+61 -:error
+61 /:error
+61 SEM:error
+61 =:error
+61 <:error
+61 >:error
+61 FOR:error
+61 ELSE:error
+61 STR:error
+61 [:error
+61 ]:error
+61 ID:shift 40
+61 IF:error
+61 AND:error
+61 DIGIT:shift 41
+61 INT:error
+61 FLOAT:error
+61 {:error
+61 }:error
+61 INC:error
+62 RETURN:error
+62 >=:error
+62 <=:error
+62 DOT:error
+62 $:error
+62 ):error
+62 (:error
+62 +:error
+62 *:error
+62 -:error
+62 /:error
+62 SEM:error
+62 =:error
+62 <:error
+62 >:error
+62 FOR:error
+62 ELSE:error
+62 STR:error
+62 [:error
+62 ]:error
+62 ID:shift 40
+62 IF:error
+62 AND:error
+62 DIGIT:shift 41
+62 INT:error
+62 FLOAT:error
+62 {:error
+62 }:error
+62 INC:error
+63 RETURN:error
+63 >=:error
+63 <=:error
+63 DOT:error
+63 $:error
+63 ):error
+63 (:error
+63 +:error
+63 *:error
+63 -:error
+63 /:error
+63 SEM:error
+63 =:error
+63 <:error
+63 >:error
+63 FOR:error
+63 ELSE:error
+63 STR:error
+63 [:error
+63 ]:error
+63 ID:error
+63 IF:error
+63 AND:error
+63 DIGIT:error
+63 INT:error
+63 FLOAT:error
+63 {:shift 80
+63 }:error
+63 INC:error
+64 RETURN:error
+64 >=:error
+64 <=:error
+64 DOT:error
+64 $:error
+64 ):error
+64 (:error
+64 +:error
+64 *:error
+64 -:error
+64 /:error
+64 SEM:shift 81
+64 =:error
+64 <:error
+64 >:error
+64 FOR:error
+64 ELSE:error
+64 STR:error
+64 [:error
+64 ]:error
+64 ID:error
+64 IF:error
+64 AND:error
+64 DIGIT:error
+64 INT:error
+64 FLOAT:error
+64 {:error
+64 }:error
+64 INC:error
+65 RETURN:error
+65 >=:error
+65 <=:error
+65 DOT:shift 82
+65 $:error
+65 ):error
+65 (:error
+65 +:error
+65 *:error
+65 -:error
+65 /:error
+65 SEM:error
+65 =:error
+65 <:error
+65 >:error
+65 FOR:error
+65 ELSE:error
+65 STR:error
+65 [:error
+65 ]:error
+65 ID:error
+65 IF:error
+65 AND:error
+65 DIGIT:error
+65 INT:error
+65 FLOAT:error
+65 {:error
+65 }:shift 83
+65 INC:error
+66 RETURN:error
+66 >=:error
+66 <=:error
+66 DOT:reduce digit_list -> DIGIT
+66 $:error
+66 ):error
+66 (:error
+66 +:error
+66 *:error
+66 -:error
+66 /:error
+66 SEM:error
+66 =:error
+66 <:error
+66 >:error
+66 FOR:error
+66 ELSE:error
+66 STR:error
+66 [:error
+66 ]:error
+66 ID:error
+66 IF:error
+66 AND:error
+66 DIGIT:error
+66 INT:error
+66 FLOAT:error
+66 {:error
+66 }:reduce digit_list -> DIGIT
+66 INC:error
+67 RETURN:error
+67 >=:error
+67 <=:error
+67 DOT:error
+67 $:error
+67 ):error
+67 (:error
+67 +:reduce add_e -> add_e + multi_e
+67 *:shift 53
+67 -:reduce add_e -> add_e + multi_e
+67 /:shift 54
+67 SEM:reduce add_e -> add_e + multi_e
+67 =:error
+67 <:error
+67 >:error
+67 FOR:error
+67 ELSE:error
+67 STR:error
+67 [:error
+67 ]:error
+67 ID:error
+67 IF:error
+67 AND:error
+67 DIGIT:error
+67 INT:error
+67 FLOAT:error
+67 {:error
+67 }:error
+67 INC:error
+68 RETURN:error
+68 >=:error
+68 <=:error
+68 DOT:error
+68 $:error
+68 ):error
+68 (:error
+68 +:reduce add_e -> add_e - multi_e
+68 *:shift 53
+68 -:reduce add_e -> add_e - multi_e
+68 /:shift 54
+68 SEM:reduce add_e -> add_e - multi_e
+68 =:error
+68 <:error
+68 >:error
+68 FOR:error
+68 ELSE:error
+68 STR:error
+68 [:error
+68 ]:error
+68 ID:error
+68 IF:error
+68 AND:error
+68 DIGIT:error
+68 INT:error
+68 FLOAT:error
+68 {:error
+68 }:error
+68 INC:error
+69 RETURN:error
+69 >=:error
+69 <=:error
+69 DOT:error
+69 $:error
+69 ):error
+69 (:error
+69 +:reduce multi_e -> multi_e * cast_e
+69 *:reduce multi_e -> multi_e * cast_e
+69 -:reduce multi_e -> multi_e * cast_e
+69 /:reduce multi_e -> multi_e * cast_e
+69 SEM:reduce multi_e -> multi_e * cast_e
+69 =:error
+69 <:error
+69 >:error
+69 FOR:error
+69 ELSE:error
+69 STR:error
+69 [:error
+69 ]:error
+69 ID:error
+69 IF:error
+69 AND:error
+69 DIGIT:error
+69 INT:error
+69 FLOAT:error
+69 {:error
+69 }:error
+69 INC:error
+2 RETURN:error
+2 >=:error
+2 <=:error
+2 DOT:error
+2 $:error
+2 ):error
+2 (:error
+2 +:error
+2 *:error
+2 -:error
+2 /:error
+2 SEM:error
+2 =:error
+2 <:error
+2 >:error
+2 FOR:error
+2 ELSE:error
+2 STR:error
+2 [:error
+2 ]:error
+2 ID:shift 3
+2 IF:error
+2 AND:error
+2 DIGIT:error
+2 INT:error
+2 FLOAT:error
+2 {:error
+2 }:error
+2 INC:error
+6 RETURN:shift 21
+6 >=:error
+6 <=:error
+6 DOT:error
+6 $:error
+6 ):error
+6 (:error
+6 +:error
+6 *:error
+6 -:error
+6 /:error
+6 SEM:error
+6 =:error
+6 <:error
+6 >:error
+6 FOR:shift 20
+6 ELSE:error
+6 STR:error
+6 [:error
+6 ]:error
+6 ID:shift 16
+6 IF:shift 19
+6 AND:error
+6 DIGIT:error
+6 INT:shift 17
+6 FLOAT:shift 18
+6 {:error
+6 }:error
+6 INC:error
+99 RETURN:shift 21
+99 >=:error
+99 <=:error
+99 DOT:error
+99 $:error
+99 ):error
+99 (:error
+99 +:error
+99 *:error
+99 -:error
+99 /:error
+99 SEM:error
+99 =:error
+99 <:error
+99 >:error
+99 FOR:shift 20
+99 ELSE:error
+99 STR:error
+99 [:error
+99 ]:error
+99 ID:shift 16
+99 IF:shift 19
+99 AND:error
+99 DIGIT:error
+99 INT:shift 17
+99 FLOAT:shift 18
+99 {:error
+99 }:error
+99 INC:error
+98 RETURN:error
+98 >=:error
+98 <=:error
+98 DOT:error
+98 $:error
+98 ):error
+98 (:error
+98 +:error
+98 *:error
+98 -:error
+98 /:error
+98 SEM:error
+98 =:error
+98 <:error
+98 >:error
+98 FOR:error
+98 ELSE:error
+98 STR:error
+98 [:error
+98 ]:error
+98 ID:error
+98 IF:error
+98 AND:error
+98 DIGIT:error
+98 INT:error
+98 FLOAT:error
+98 {:shift 100
+98 }:error
+98 INC:error
+91 RETURN:reduce declarator_e -> type declarator = { digit_list } SEM
+91 >=:error
+91 <=:error
+91 DOT:error
+91 $:error
+91 ):error
+91 (:error
+91 +:error
+91 *:error
+91 -:error
+91 /:error
+91 SEM:error
+91 =:error
+91 <:error
+91 >:error
+91 FOR:reduce declarator_e -> type declarator = { digit_list } SEM
+91 ELSE:error
+91 STR:error
+91 [:error
+91 ]:error
+91 ID:reduce declarator_e -> type declarator = { digit_list } SEM
+91 IF:reduce declarator_e -> type declarator = { digit_list } SEM
+91 AND:error
+91 DIGIT:error
+91 INT:reduce declarator_e -> type declarator = { digit_list } SEM
+91 FLOAT:reduce declarator_e -> type declarator = { digit_list } SEM
+91 {:error
+91 }:reduce declarator_e -> type declarator = { digit_list } SEM
+91 INC:error
+90 RETURN:error
+90 >=:error
+90 <=:error
+90 DOT:reduce digit_list -> digit_list DOT DIGIT
+90 $:error
+90 ):error
+90 (:error
+90 +:error
+90 *:error
+90 -:error
+90 /:error
+90 SEM:error
+90 =:error
+90 <:error
+90 >:error
+90 FOR:error
+90 ELSE:error
+90 STR:error
+90 [:error
+90 ]:error
+90 ID:error
+90 IF:error
+90 AND:error
+90 DIGIT:error
+90 INT:error
+90 FLOAT:error
+90 {:error
+90 }:reduce digit_list -> digit_list DOT DIGIT
+90 INC:error
+93 RETURN:error
+93 >=:error
+93 <=:error
+93 DOT:error
+93 $:error
+93 ):error
+93 (:error
+93 +:error
+93 *:error
+93 -:error
+93 /:error
+93 SEM:shift 97
+93 =:error
+93 <:error
+93 >:error
+93 FOR:error
+93 ELSE:error
+93 STR:error
+93 [:error
+93 ]:error
+93 ID:error
+93 IF:error
+93 AND:error
+93 DIGIT:error
+93 INT:error
+93 FLOAT:error
+93 {:error
+93 }:error
+93 INC:error
+92 RETURN:reduce func_e -> ID ( STR DOT declarator_list ) SEM
+92 >=:error
+92 <=:error
+92 DOT:error
+92 $:error
+92 ):error
+92 (:error
+92 +:error
+92 *:error
+92 -:error
+92 /:error
+92 SEM:error
+92 =:error
+92 <:error
+92 >:error
+92 FOR:reduce func_e -> ID ( STR DOT declarator_list ) SEM
+92 ELSE:error
+92 STR:error
+92 [:error
+92 ]:error
+92 ID:reduce func_e -> ID ( STR DOT declarator_list ) SEM
+92 IF:reduce func_e -> ID ( STR DOT declarator_list ) SEM
+92 AND:error
+92 DIGIT:error
+92 INT:reduce func_e -> ID ( STR DOT declarator_list ) SEM
+92 FLOAT:reduce func_e -> ID ( STR DOT declarator_list ) SEM
+92 {:error
+92 }:reduce func_e -> ID ( STR DOT declarator_list ) SEM
+92 INC:error
+95 RETURN:error
+95 >=:error
+95 <=:error
+95 DOT:error
+95 $:error
+95 ):error
+95 (:error
+95 +:error
+95 *:error
+95 -:error
+95 /:error
+95 SEM:error
+95 =:error
+95 <:error
+95 >:error
+95 FOR:error
+95 ELSE:error
+95 STR:error
+95 [:error
+95 ]:error
+95 ID:error
+95 IF:error
+95 AND:error
+95 DIGIT:error
+95 INT:error
+95 FLOAT:error
+95 {:shift 99
+95 }:error
+95 INC:error
+94 RETURN:error
+94 >=:error
+94 <=:error
+94 DOT:error
+94 $:error
+94 ):error
+94 (:error
+94 +:error
+94 *:error
+94 -:error
+94 /:error
+94 SEM:error
+94 =:error
+94 <:error
+94 >:error
+94 FOR:error
+94 ELSE:shift 98
+94 STR:error
+94 [:error
+94 ]:error
+94 ID:error
+94 IF:error
+94 AND:error
+94 DIGIT:error
+94 INT:error
+94 FLOAT:error
+94 {:error
+94 }:error
+94 INC:error
+97 RETURN:reduce func_e -> ID ( STR DOT AND ID ) SEM
+97 >=:error
+97 <=:error
+97 DOT:error
+97 $:error
+97 ):error
+97 (:error
+97 +:error
+97 *:error
+97 -:error
+97 /:error
+97 SEM:error
+97 =:error
+97 <:error
+97 >:error
+97 FOR:reduce func_e -> ID ( STR DOT AND ID ) SEM
+97 ELSE:error
+97 STR:error
+97 [:error
+97 ]:error
+97 ID:reduce func_e -> ID ( STR DOT AND ID ) SEM
+97 IF:reduce func_e -> ID ( STR DOT AND ID ) SEM
+97 AND:error
+97 DIGIT:error
+97 INT:reduce func_e -> ID ( STR DOT AND ID ) SEM
+97 FLOAT:reduce func_e -> ID ( STR DOT AND ID ) SEM
+97 {:error
+97 }:reduce func_e -> ID ( STR DOT AND ID ) SEM
+97 INC:error
+96 RETURN:error
+96 >=:error
+96 <=:error
+96 DOT:error
+96 $:error
+96 ):reduce inc_e -> ID INC
+96 (:error
+96 +:error
+96 *:error
+96 -:error
+96 /:error
+96 SEM:error
+96 =:error
+96 <:error
+96 >:error
+96 FOR:error
+96 ELSE:error
+96 STR:error
+96 [:error
+96 ]:error
+96 ID:error
+96 IF:error
+96 AND:error
+96 DIGIT:error
+96 INT:error
+96 FLOAT:error
+96 {:error
+96 }:error
+96 INC:error
+11 RETURN:reduce expression -> declarator_e
+11 >=:error
+11 <=:error
+11 DOT:error
+11 $:error
+11 ):error
+11 (:error
+11 +:error
+11 *:error
+11 -:error
+11 /:error
+11 SEM:error
+11 =:error
+11 <:error
+11 >:error
+11 FOR:reduce expression -> declarator_e
+11 ELSE:error
+11 STR:error
+11 [:error
+11 ]:error
+11 ID:reduce expression -> declarator_e
+11 IF:reduce expression -> declarator_e
+11 AND:error
+11 DIGIT:error
+11 INT:reduce expression -> declarator_e
+11 FLOAT:reduce expression -> declarator_e
+11 {:error
+11 }:reduce expression -> declarator_e
+11 INC:error
+10 RETURN:error
+10 >=:error
+10 <=:error
+10 DOT:error
+10 $:error
+10 ):error
+10 (:error
+10 +:error
+10 *:error
+10 -:error
+10 /:error
+10 SEM:error
+10 =:shift 27
+10 <:error
+10 >:error
+10 FOR:error
+10 ELSE:error
+10 STR:error
+10 [:error
+10 ]:error
+10 ID:error
+10 IF:error
+10 AND:error
+10 DIGIT:error
+10 INT:error
+10 FLOAT:error
+10 {:error
+10 }:error
+10 INC:error
+13 RETURN:reduce expression -> select_e
+13 >=:error
+13 <=:error
+13 DOT:error
+13 $:error
+13 ):error
+13 (:error
+13 +:error
+13 *:error
+13 -:error
+13 /:error
+13 SEM:error
+13 =:error
+13 <:error
+13 >:error
+13 FOR:reduce expression -> select_e
+13 ELSE:error
+13 STR:error
+13 [:error
+13 ]:error
+13 ID:reduce expression -> select_e
+13 IF:reduce expression -> select_e
+13 AND:error
+13 DIGIT:error
+13 INT:reduce expression -> select_e
+13 FLOAT:reduce expression -> select_e
+13 {:error
+13 }:reduce expression -> select_e
+13 INC:error
+12 RETURN:reduce expression -> assignment_e
+12 >=:error
+12 <=:error
+12 DOT:error
+12 $:error
+12 ):error
+12 (:error
+12 +:error
+12 *:error
+12 -:error
+12 /:error
+12 SEM:error
+12 =:error
+12 <:error
+12 >:error
+12 FOR:reduce expression -> assignment_e
+12 ELSE:error
+12 STR:error
+12 [:error
+12 ]:error
+12 ID:reduce expression -> assignment_e
+12 IF:reduce expression -> assignment_e
+12 AND:error
+12 DIGIT:error
+12 INT:reduce expression -> assignment_e
+12 FLOAT:reduce expression -> assignment_e
+12 {:error
+12 }:reduce expression -> assignment_e
+12 INC:error
+15 RETURN:reduce expression -> func_e
+15 >=:error
+15 <=:error
+15 DOT:error
+15 $:error
+15 ):error
+15 (:error
+15 +:error
+15 *:error
+15 -:error
+15 /:error
+15 SEM:error
+15 =:error
+15 <:error
+15 >:error
+15 FOR:reduce expression -> func_e
+15 ELSE:error
+15 STR:error
+15 [:error
+15 ]:error
+15 ID:reduce expression -> func_e
+15 IF:reduce expression -> func_e
+15 AND:error
+15 DIGIT:error
+15 INT:reduce expression -> func_e
+15 FLOAT:reduce expression -> func_e
+15 {:error
+15 }:reduce expression -> func_e
+15 INC:error
+14 RETURN:reduce expression -> iterator_e
+14 >=:error
+14 <=:error
+14 DOT:error
+14 $:error
+14 ):error
+14 (:error
+14 +:error
+14 *:error
+14 -:error
+14 /:error
+14 SEM:error
+14 =:error
+14 <:error
+14 >:error
+14 FOR:reduce expression -> iterator_e
+14 ELSE:error
+14 STR:error
+14 [:error
+14 ]:error
+14 ID:reduce expression -> iterator_e
+14 IF:reduce expression -> iterator_e
+14 AND:error
+14 DIGIT:error
+14 INT:reduce expression -> iterator_e
+14 FLOAT:reduce expression -> iterator_e
+14 {:error
+14 }:reduce expression -> iterator_e
+14 INC:error
+17 RETURN:error
+17 >=:error
+17 <=:error
+17 DOT:error
+17 $:error
+17 ):error
+17 (:error
+17 +:error
+17 *:error
+17 -:error
+17 /:error
+17 SEM:error
+17 =:error
+17 <:error
+17 >:error
+17 FOR:error
+17 ELSE:error
+17 STR:error
+17 [:error
+17 ]:error
+17 ID:reduce type -> INT
+17 IF:error
+17 AND:error
+17 DIGIT:error
+17 INT:error
+17 FLOAT:error
+17 {:error
+17 }:error
+17 INC:error
+16 RETURN:error
+16 >=:error
+16 <=:error
+16 DOT:error
+16 $:error
+16 ):error
+16 (:shift 28
+16 +:error
+16 *:error
+16 -:error
+16 /:error
+16 SEM:error
+16 =:reduce declarator -> ID
+16 <:error
+16 >:error
+16 FOR:error
+16 ELSE:error
+16 STR:error
+16 [:shift 29
+16 ]:error
+16 ID:error
+16 IF:error
+16 AND:error
+16 DIGIT:error
+16 INT:error
+16 FLOAT:error
+16 {:error
+16 }:error
+16 INC:error
+19 RETURN:error
+19 >=:error
+19 <=:error
+19 DOT:error
+19 $:error
+19 ):error
+19 (:shift 30
+19 +:error
+19 *:error
+19 -:error
+19 /:error
+19 SEM:error
+19 =:error
+19 <:error
+19 >:error
+19 FOR:error
+19 ELSE:error
+19 STR:error
+19 [:error
+19 ]:error
+19 ID:error
+19 IF:error
+19 AND:error
+19 DIGIT:error
+19 INT:error
+19 FLOAT:error
+19 {:error
+19 }:error
+19 INC:error
+18 RETURN:error
+18 >=:error
+18 <=:error
+18 DOT:error
+18 $:error
+18 ):error
+18 (:error
+18 +:error
+18 *:error
+18 -:error
+18 /:error
+18 SEM:error
+18 =:error
+18 <:error
+18 >:error
+18 FOR:error
+18 ELSE:error
+18 STR:error
+18 [:error
+18 ]:error
+18 ID:reduce type -> FLOAT
+18 IF:error
+18 AND:error
+18 DIGIT:error
+18 INT:error
+18 FLOAT:error
+18 {:error
+18 }:error
+18 INC:error
+48 RETURN:error
+48 >=:error
+48 <=:error
+48 DOT:error
+48 $:error
+48 ):error
+48 (:error
+48 +:error
+48 *:error
+48 -:error
+48 /:error
+48 SEM:error
+48 =:error
+48 <:error
+48 >:error
+48 FOR:error
+48 ELSE:error
+48 STR:error
+48 [:error
+48 ]:error
+48 ID:error
+48 IF:error
+48 AND:error
+48 DIGIT:shift 66
+48 INT:error
+48 FLOAT:error
+48 {:error
+48 }:error
+48 INC:error
+49 RETURN:error
+49 >=:error
+49 <=:error
+49 DOT:reduce declarator_list -> declarator_list DOT declarator
+49 $:error
+49 ):reduce declarator_list -> declarator_list DOT declarator
+49 (:error
+49 +:error
+49 *:error
+49 -:error
+49 /:error
+49 SEM:reduce declarator_list -> declarator_list DOT declarator
+49 =:error
+49 <:error
+49 >:error
+49 FOR:error
+49 ELSE:error
+49 STR:error
+49 [:error
+49 ]:error
+49 ID:error
+49 IF:error
+49 AND:error
+49 DIGIT:error
+49 INT:error
+49 FLOAT:error
+49 {:error
+49 }:error
+49 INC:error
+46 RETURN:error
+46 >=:error
+46 <=:error
+46 DOT:error
+46 $:error
+46 ):error
+46 (:error
+46 +:error
+46 *:error
+46 -:error
+46 /:error
+46 SEM:error
+46 =:error
+46 <:error
+46 >:error
+46 FOR:error
+46 ELSE:error
+46 STR:error
+46 [:error
+46 ]:error
+46 ID:shift 40
+46 IF:error
+46 AND:error
+46 DIGIT:shift 41
+46 INT:error
+46 FLOAT:error
+46 {:error
+46 }:error
+46 INC:error
+47 RETURN:reduce expression -> RETURN DIGIT SEM
+47 >=:error
+47 <=:error
+47 DOT:error
+47 $:error
+47 ):error
+47 (:error
+47 +:error
+47 *:error
+47 -:error
+47 /:error
+47 SEM:error
+47 =:error
+47 <:error
+47 >:error
+47 FOR:reduce expression -> RETURN DIGIT SEM
+47 ELSE:error
+47 STR:error
+47 [:error
+47 ]:error
+47 ID:reduce expression -> RETURN DIGIT SEM
+47 IF:reduce expression -> RETURN DIGIT SEM
+47 AND:error
+47 DIGIT:error
+47 INT:reduce expression -> RETURN DIGIT SEM
+47 FLOAT:reduce expression -> RETURN DIGIT SEM
+47 {:error
+47 }:reduce expression -> RETURN DIGIT SEM
+47 INC:error
+44 RETURN:error
+44 >=:shift 61
+44 <=:shift 62
+44 DOT:error
+44 $:error
+44 ):error
+44 (:error
+44 +:error
+44 *:error
+44 -:error
+44 /:error
+44 SEM:error
+44 =:error
+44 <:shift 60
+44 >:shift 59
+44 FOR:error
+44 ELSE:error
+44 STR:error
+44 [:error
+44 ]:error
+44 ID:error
+44 IF:error
+44 AND:error
+44 DIGIT:error
+44 INT:error
+44 FLOAT:error
+44 {:error
+44 }:error
+44 INC:error
+45 RETURN:error
+45 >=:error
+45 <=:error
+45 DOT:error
+45 $:error
+45 ):shift 63
+45 (:error
+45 +:error
+45 *:error
+45 -:error
+45 /:error
+45 SEM:error
+45 =:error
+45 <:error
+45 >:error
+45 FOR:error
+45 ELSE:error
+45 STR:error
+45 [:error
+45 ]:error
+45 ID:error
+45 IF:error
+45 AND:error
+45 DIGIT:error
+45 INT:error
+45 FLOAT:error
+45 {:error
+45 }:error
+45 INC:error
+42 RETURN:error
+42 >=:error
+42 <=:error
+42 DOT:shift 56
+42 $:error
+42 ):shift 57
+42 (:error
+42 +:error
+42 *:error
+42 -:error
+42 /:error
+42 SEM:error
+42 =:error
+42 <:error
+42 >:error
+42 FOR:error
+42 ELSE:error
+42 STR:error
+42 [:error
+42 ]:error
+42 ID:error
+42 IF:error
+42 AND:error
+42 DIGIT:error
+42 INT:error
+42 FLOAT:error
+42 {:error
+42 }:error
+42 INC:error
+43 RETURN:error
+43 >=:error
+43 <=:error
+43 DOT:error
+43 $:error
+43 ):error
+43 (:error
+43 +:error
+43 *:error
+43 -:error
+43 /:error
+43 SEM:error
+43 =:error
+43 <:error
+43 >:error
+43 FOR:error
+43 ELSE:error
+43 STR:error
+43 [:error
+43 ]:shift 58
+43 ID:error
+43 IF:error
+43 AND:error
+43 DIGIT:error
+43 INT:error
+43 FLOAT:error
+43 {:error
+43 }:error
+43 INC:error
+40 RETURN:error
+40 >=:reduce declarator -> ID
+40 <=:reduce declarator -> ID
+40 DOT:error
+40 $:error
+40 ):reduce declarator -> ID
+40 (:error
+40 +:reduce declarator -> ID
+40 *:reduce declarator -> ID
+40 -:reduce declarator -> ID
+40 /:reduce declarator -> ID
+40 SEM:reduce declarator -> ID
+40 =:error
+40 <:reduce declarator -> ID
+40 >:reduce declarator -> ID
+40 FOR:error
+40 ELSE:error
+40 STR:error
+40 [:shift 55
+40 ]:error
+40 ID:error
+40 IF:error
+40 AND:error
+40 DIGIT:error
+40 INT:error
+40 FLOAT:error
+40 {:error
+40 }:error
+40 INC:error
+41 RETURN:error
+41 >=:reduce cast_e -> DIGIT
+41 <=:reduce cast_e -> DIGIT
+41 DOT:error
+41 $:error
+41 ):reduce cast_e -> DIGIT
+41 (:error
+41 +:reduce cast_e -> DIGIT
+41 *:reduce cast_e -> DIGIT
+41 -:reduce cast_e -> DIGIT
+41 /:reduce cast_e -> DIGIT
+41 SEM:reduce cast_e -> DIGIT
+41 =:error
+41 <:reduce cast_e -> DIGIT
+41 >:reduce cast_e -> DIGIT
+41 FOR:error
+41 ELSE:error
+41 STR:error
+41 [:error
+41 ]:error
+41 ID:error
+41 IF:error
+41 AND:error
+41 DIGIT:error
+41 INT:error
+41 FLOAT:error
+41 {:error
+41 }:error
+41 INC:error
+1 RETURN:error
+1 >=:error
+1 <=:error
+1 DOT:error
+1 $:accept
+1 ):error
+1 (:error
+1 +:error
+1 *:error
+1 -:error
+1 /:error
+1 SEM:error
+1 =:error
+1 <:error
+1 >:error
+1 FOR:error
+1 ELSE:error
+1 STR:error
+1 [:error
+1 ]:error
+1 ID:error
+1 IF:error
+1 AND:error
+1 DIGIT:error
+1 INT:error
+1 FLOAT:error
+1 {:error
+1 }:error
+1 INC:error
+5 RETURN:error
+5 >=:error
+5 <=:error
+5 DOT:error
+5 $:error
+5 ):error
+5 (:error
+5 +:error
+5 *:error
+5 -:error
+5 /:error
+5 SEM:error
+5 =:error
+5 <:error
+5 >:error
+5 FOR:error
+5 ELSE:error
+5 STR:error
+5 [:error
+5 ]:error
+5 ID:error
+5 IF:error
+5 AND:error
+5 DIGIT:error
+5 INT:error
+5 FLOAT:error
+5 {:shift 6
+5 }:error
+5 INC:error
+9 RETURN:error
+9 >=:error
+9 <=:error
+9 DOT:error
+9 $:error
+9 ):error
+9 (:error
+9 +:error
+9 *:error
+9 -:error
+9 /:error
+9 SEM:error
+9 =:error
+9 <:error
+9 >:error
+9 FOR:error
+9 ELSE:error
+9 STR:error
+9 [:error
+9 ]:error
+9 ID:shift 26
+9 IF:error
+9 AND:error
+9 DIGIT:error
+9 INT:error
+9 FLOAT:error
+9 {:error
+9 }:error
+9 INC:error
+77 RETURN:error
+77 >=:error
+77 <=:error
+77 DOT:error
+77 $:error
+77 ):reduce bool_e -> cast_e < cast_e
+77 (:error
+77 +:error
+77 *:error
+77 -:error
+77 /:error
+77 SEM:reduce bool_e -> cast_e < cast_e
+77 =:error
+77 <:error
+77 >:error
+77 FOR:error
+77 ELSE:error
+77 STR:error
+77 [:error
+77 ]:error
+77 ID:error
+77 IF:error
+77 AND:error
+77 DIGIT:error
+77 INT:error
+77 FLOAT:error
+77 {:error
+77 }:error
+77 INC:error
+76 RETURN:error
+76 >=:error
+76 <=:error
+76 DOT:error
+76 $:error
+76 ):reduce bool_e -> cast_e > cast_e
+76 (:error
+76 +:error
+76 *:error
+76 -:error
+76 /:error
+76 SEM:reduce bool_e -> cast_e > cast_e
+76 =:error
+76 <:error
+76 >:error
+76 FOR:error
+76 ELSE:error
+76 STR:error
+76 [:error
+76 ]:error
+76 ID:error
+76 IF:error
+76 AND:error
+76 DIGIT:error
+76 INT:error
+76 FLOAT:error
+76 {:error
+76 }:error
+76 INC:error
+75 RETURN:reduce func_e -> ID ( STR ) SEM
+75 >=:error
+75 <=:error
+75 DOT:error
+75 $:error
+75 ):error
+75 (:error
+75 +:error
+75 *:error
+75 -:error
+75 /:error
+75 SEM:error
+75 =:error
+75 <:error
+75 >:error
+75 FOR:reduce func_e -> ID ( STR ) SEM
+75 ELSE:error
+75 STR:error
+75 [:error
+75 ]:error
+75 ID:reduce func_e -> ID ( STR ) SEM
+75 IF:reduce func_e -> ID ( STR ) SEM
+75 AND:error
+75 DIGIT:error
+75 INT:reduce func_e -> ID ( STR ) SEM
+75 FLOAT:reduce func_e -> ID ( STR ) SEM
+75 {:error
+75 }:reduce func_e -> ID ( STR ) SEM
+75 INC:error
+74 RETURN:error
+74 >=:error
+74 <=:error
+74 DOT:error
+74 $:error
+74 ):error
+74 (:error
+74 +:error
+74 *:error
+74 -:error
+74 /:error
+74 SEM:error
+74 =:error
+74 <:error
+74 >:error
+74 FOR:error
+74 ELSE:error
+74 STR:error
+74 [:error
+74 ]:error
+74 ID:shift 86
+74 IF:error
+74 AND:error
+74 DIGIT:error
+74 INT:error
+74 FLOAT:error
+74 {:error
+74 }:error
+74 INC:error
+73 RETURN:error
+73 >=:error
+73 <=:error
+73 DOT:shift 34
+73 $:error
+73 ):shift 85
+73 (:error
+73 +:error
+73 *:error
+73 -:error
+73 /:error
+73 SEM:error
+73 =:error
+73 <:error
+73 >:error
+73 FOR:error
+73 ELSE:error
+73 STR:error
+73 [:error
+73 ]:error
+73 ID:error
+73 IF:error
+73 AND:error
+73 DIGIT:error
+73 INT:error
+73 FLOAT:error
+73 {:error
+73 }:error
+73 INC:error
+72 RETURN:error
+72 >=:error
+72 <=:error
+72 DOT:reduce declarator_list -> declarator
+72 $:error
+72 ):reduce declarator_list -> declarator
+72 (:error
+72 +:error
+72 *:error
+72 -:error
+72 /:error
+72 SEM:error
+72 =:error
+72 <:error
+72 >:error
+72 FOR:error
+72 ELSE:error
+72 STR:error
+72 [:error
+72 ]:error
+72 ID:error
+72 IF:error
+72 AND:error
+72 DIGIT:error
+72 INT:error
+72 FLOAT:error
+72 {:error
+72 }:error
+72 INC:error
+71 RETURN:error
+71 >=:error
+71 <=:error
+71 DOT:error
+71 $:error
+71 ):error
+71 (:error
+71 +:error
+71 *:error
+71 -:error
+71 /:error
+71 SEM:error
+71 =:error
+71 <:error
+71 >:error
+71 FOR:error
+71 ELSE:error
+71 STR:error
+71 [:error
+71 ]:shift 84
+71 ID:error
+71 IF:error
+71 AND:error
+71 DIGIT:error
+71 INT:error
+71 FLOAT:error
+71 {:error
+71 }:error
+71 INC:error
+70 RETURN:error
+70 >=:error
+70 <=:error
+70 DOT:error
+70 $:error
+70 ):error
+70 (:error
+70 +:reduce multi_e -> multi_e / cast_e
+70 *:reduce multi_e -> multi_e / cast_e
+70 -:reduce multi_e -> multi_e / cast_e
+70 /:reduce multi_e -> multi_e / cast_e
+70 SEM:reduce multi_e -> multi_e / cast_e
+70 =:error
+70 <:error
+70 >:error
+70 FOR:error
+70 ELSE:error
+70 STR:error
+70 [:error
+70 ]:error
+70 ID:error
+70 IF:error
+70 AND:error
+70 DIGIT:error
+70 INT:error
+70 FLOAT:error
+70 {:error
+70 }:error
+70 INC:error
+79 RETURN:error
+79 >=:error
+79 <=:error
+79 DOT:error
+79 $:error
+79 ):reduce bool_e -> cast_e <= cast_e
+79 (:error
+79 +:error
+79 *:error
+79 -:error
+79 /:error
+79 SEM:reduce bool_e -> cast_e <= cast_e
+79 =:error
+79 <:error
+79 >:error
+79 FOR:error
+79 ELSE:error
+79 STR:error
+79 [:error
+79 ]:error
+79 ID:error
+79 IF:error
+79 AND:error
+79 DIGIT:error
+79 INT:error
+79 FLOAT:error
+79 {:error
+79 }:error
+79 INC:error
+78 RETURN:error
+78 >=:error
+78 <=:error
+78 DOT:error
+78 $:error
+78 ):reduce bool_e -> cast_e >= cast_e
+78 (:error
+78 +:error
+78 *:error
+78 -:error
+78 /:error
+78 SEM:reduce bool_e -> cast_e >= cast_e
+78 =:error
+78 <:error
+78 >:error
+78 FOR:error
+78 ELSE:error
+78 STR:error
+78 [:error
+78 ]:error
+78 ID:error
+78 IF:error
+78 AND:error
+78 DIGIT:error
+78 INT:error
+78 FLOAT:error
+78 {:error
+78 }:error
+78 INC:error

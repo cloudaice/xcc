@@ -4,7 +4,30 @@ import os
 
 
 #(id,value)
-
+"""
+(DIGIT,整数 )
+(ID,标识符)
+(STR,字符窜)
+(INT,int)
+(FLOAT,float)
+(IF,if)
+(FOR,for)
+(ELSE,else)
+(RETURN,return)
+(+,+)
+(-,-)
+(*,*)
+(/,/)
+(>,>)
+(>=,>=)
+(<,<)
+(<=,<=)
+(==,==)
+(INC,++)
+(DOT,,)
+(SEM,;)
+(AND,&)
+"""
 
 def analysis_line(line,word_list):
     i =0
@@ -14,7 +37,7 @@ def analysis_line(line,word_list):
         if state == 0:
             c = line[j]
             if c == '#':
-                word_list.append(line.strip())
+                #word_list.append(line.strip())
                 j += len(line)
             elif c == '\n' or c == '\t' or c== ' ':
                 state = 0
@@ -24,7 +47,7 @@ def analysis_line(line,word_list):
                 state = 3
                 j += 1
             elif c in ['&','\"','i','f','e','r','+','-','*','/','>','<','=',',',';','(',')','[',']','{','}']:
-                render = {'"':5,'i':7,'f':11,'e':19,'r':21,'+':34,'-':35,
+                render = {'"':5,'i':7,'f':11,'e':19,'r':27,'+':34,'-':35,
                         '*':36,'/':37,'>':38,'<':40,'=':44,',':47,';':48,
                         '(':49,')':50,'[':51,']':52,'{':53,'}':54,'&':55 }
                 state = render[c]
@@ -42,7 +65,7 @@ def analysis_line(line,word_list):
             else:
                 state = 2
         elif state == 2:
-            word_list.append(line[i:j])
+            word_list.append(('ID',line[i:j]))
             i = j
             state = 0
         elif  state == 3:
@@ -52,7 +75,7 @@ def analysis_line(line,word_list):
             else:
                 state = 4
         elif  state == 4:
-            word_list.append(line[i:j])
+            word_list.append(('DIGIT',line[i:j]))
             i = j
             state = 0
         elif  state == 5:
@@ -63,7 +86,7 @@ def analysis_line(line,word_list):
             else:
                 j += 1
         elif  state == 6:
-            word_list.append(line[i:j])
+            word_list.append(('STR',line[i:j]))
             i = j
             state = 0
         elif  state == 7:
@@ -90,7 +113,7 @@ def analysis_line(line,word_list):
             else:
                 state = 1
         elif  state == 10:
-            word_list.append(line[i:j])
+            word_list.append( ('INT',line[i:j]) )
             i = j
             state = 0
         elif  state == 11:
@@ -120,6 +143,7 @@ def analysis_line(line,word_list):
         elif  state == 14:
             c = line[j]
             if c == 't':
+                j += 1
                 state = 15
             else:
                 state = 1
@@ -129,16 +153,16 @@ def analysis_line(line,word_list):
             else:
                 state = 1
         elif  state == 16:
-            word_list.append(line[i:j])
+            word_list.append( ('FLOAT',line[i:j]) )
             i = j
             state = 0
         elif  state == 17:
-            if line[j] == ' ':
+            if line[j] == ' ' or line[j] == '(':
                 state = 18
             else:
                 state = 1
         elif  state == 18:
-            word_list.append(line[i:j])
+            word_list.append(('IF',line[i:j]) )
             state = 0
         elif  state == 19:
             if line[j] == 'l':
@@ -161,10 +185,12 @@ def analysis_line(line,word_list):
         elif  state == 22:
             if line[j] == ' ':
                 state = 23
+            elif line[j] == '{':
+                state = 23
             else:
                 state = 1
         elif  state == 23:
-            word_list.append(line[i:j])
+            word_list.append(('ELSE',line[i:j]) )
             i = j
             state = 0
         elif  state == 24:
@@ -174,12 +200,12 @@ def analysis_line(line,word_list):
             else:
                 state = 1
         elif  state == 25:
-            if line[j] == ' ':
+            if line[j] == ' ' or line[j] == '(':
                 state = 26
             else:
                 state = 1
         elif  state == 26:
-            word_list.append(line[i:j])
+            word_list.append(('FOR',line[i:j]) )
             i = j
             state = 0
         elif  state == 27:
@@ -218,23 +244,25 @@ def analysis_line(line,word_list):
             else:
                 state = 1
         elif  state == 33:
-            word_list.append(line[i:j])
+            word_list.append(('RETURN',line[i:j]) )
             i = j
             state = 0
         elif  state == 34:
-            word_list.append(line[i:j])
-            i = j
-            state = 0
+            if line[j] == '+':
+                state = 57
+                j += 1
+            else:
+                state = 56
         elif  state == 35:
-            word_list.append(line[i:j])
+            word_list.append(('-',line[i:j]))
             i = j
             state = 0
         elif  state == 36:
-            word_list.append(line[i:j])
+            word_list.append(('*',line[i:j]) )
             i = j
             state = 0
         elif  state == 37:
-            word_list.append(line[i:j])
+            word_list.append(('/',line[i:j]))
             i = j
             state = 0
         elif  state == 38:
@@ -246,11 +274,11 @@ def analysis_line(line,word_list):
             else:
                 state = 40
         elif  state == 39:
-            word_list.append(line[i:j])
+            word_list.append(('>=',line[i:j]))
             i = j
             state = 0
         elif  state == 40:
-            word_list.append(line[i:j])
+            word_list.append(('>',line[i:j]))
             i = j
             state = 0
         elif  state == 41:
@@ -262,11 +290,11 @@ def analysis_line(line,word_list):
             else:
                 state = 43
         elif  state == 42:
-            word_list.append(line[i:j])
+            word_list.append(('<=',line[i:j]))
             i = j
             state = 0
         elif  state == 43:
-            word_list.append(line[i:j])
+            word_list.append(('<',line[i:j]))
             i = j
             state = 0
         elif  state == 44:
@@ -276,58 +304,77 @@ def analysis_line(line,word_list):
             else:
                 state = 46
         elif  state == 45:
-            word_list.append(line[i:j])
+            word_list.append(('==',line[i:j]))
             i = j
             state = 0
         elif  state == 46:
-            word_list.append(line[i:j])
+            word_list.append(('=',line[i:j]))
             i = j
             state = 0
         elif  state == 47:
-            word_list.append(line[i:j])
+            word_list.append(('DOT',line[i:j]))
             i = j
             state = 0
         elif  state == 48:
-            word_list.append(line[i:j])
+            word_list.append(('SEM',line[i:j]))
             i = j
             state = 0
         elif  state == 49:
-            word_list.append(line[i:j])
+            word_list.append(('(',line[i:j]))
             i = j
             state = 0
         elif  state == 50:
-            word_list.append(line[i:j])
+            word_list.append((')',line[i:j]))
             i = j
             state = 0
         elif  state == 51:
-            word_list.append(line[i:j])
+            word_list.append(('[',line[i:j]))
             i = j
             state = 0
         elif  state == 52:
-            word_list.append(line[i:j])
+            word_list.append((']',line[i:j]))
             i = j
             state = 0
         elif  state == 53:
-            word_list.append(line[i:j])
+            word_list.append(('{',line[i:j]))
             i = j
             state = 0
         elif  state == 54:
-            word_list.append(line[i:j])
+            word_list.append(('}',line[i:j]))
             i = j
             state = 0
         elif state == 55:
-            word_list.append(line[i:j])
+            word_list.append(('AND',line[i:j]))
             i = j
+            state = 0
+        elif state == 56:
+            word_list.append(('+',line[i:j]))
+            i = j
+            state = 0
+        elif state == 57:
+            word_list.append(('INC',line[i:j]))
+            i = j 
             state = 0
 
 def analysis_file(filename,word_list):
     fd = open(filename,'r')
     for line in fd.readlines():
         analysis_line(line,word_list)
+
+def get_words_list():
+    all_words = []
+    analysis_file('test/test.c',all_words)
+    return all_words
+
+
 if __name__ == "__main__":
     all_words =[]
     filename = sys.argv[1]
     analysis_file(filename,all_words)
+    ids = []
     for word in all_words:
-        print word
+        ids.append(word[0])
+        #print word
+    line = ' '.join(ids)
+    print line
 

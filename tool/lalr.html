@@ -1,0 +1,5804 @@
+<html>
+<head>
+<title>LALR分析表</title>
+</head>
+<body>
+<p align="center">LALR分析表</p>
+<table border="1">
+<tr>
+<td rowspan="2" nowrap><p align="center">状态</p></td>
+<td colspan="29" nowrap><p align="center">ACTION</p></td>
+<td colspan="17" nowrap><p align="center">GOTO</p></td>
+</tr>
+<tr>
+<td nowrap>ID</td>
+<td nowrap>INT</td>
+<td nowrap>FLOAT</td>
+<td nowrap>DIGIT</td>
+<td nowrap>STR</td>
+<td nowrap>IF</td>
+<td nowrap>ELSE</td>
+<td nowrap>FOR</td>
+<td nowrap>RETURN</td>
+<td nowrap>+</td>
+<td nowrap>-</td>
+<td nowrap>*</td>
+<td nowrap>/</td>
+<td nowrap>></td>
+<td nowrap><</td>
+<td nowrap>=</td>
+<td nowrap>>=</td>
+<td nowrap><=</td>
+<td nowrap>DOT</td>
+<td nowrap>SEM</td>
+<td nowrap>(</td>
+<td nowrap>)</td>
+<td nowrap>[</td>
+<td nowrap>]</td>
+<td nowrap>{</td>
+<td nowrap>}</td>
+<td nowrap>AND</td>
+<td nowrap>INC</td>
+<td nowrap>$</td>
+<td nowrap>p</td>
+<td nowrap>expression</td>
+<td nowrap>expression_list</td>
+<td nowrap>type</td>
+<td nowrap>declarator</td>
+<td nowrap>declarator_list</td>
+<td nowrap>declarator_e</td>
+<td nowrap>digit_list</td>
+<td nowrap>assignment_e</td>
+<td nowrap>add_e</td>
+<td nowrap>multi_e</td>
+<td nowrap>cast_e</td>
+<td nowrap>select_e</td>
+<td nowrap>iterator_e</td>
+<td nowrap>func_e</td>
+<td nowrap>bool_e</td>
+<td nowrap>inc_e</td>
+</tr>
+<tr>
+<td nowrap>0</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;2</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>1</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>1</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>accept</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>2</td>
+<td nowrap>shift&nbsp;3</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>3</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;4</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>4</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;5</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>5</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;6</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>6</td>
+<td nowrap>shift&nbsp;16</td>
+<td nowrap>shift&nbsp;17</td>
+<td nowrap>shift&nbsp;18</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;19</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;20</td>
+<td nowrap>shift&nbsp;21</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>7</td>
+<td nowrap>8</td>
+<td nowrap>9</td>
+<td nowrap>10</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>11</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>12</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>13</td>
+<td nowrap>14</td>
+<td nowrap>15</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>7</td>
+<td nowrap>reduce&nbsp;expression_list&nbsp;->&nbsp;expression</td>
+<td nowrap>reduce&nbsp;expression_list&nbsp;->&nbsp;expression</td>
+<td nowrap>reduce&nbsp;expression_list&nbsp;->&nbsp;expression</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression_list&nbsp;->&nbsp;expression</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression_list&nbsp;->&nbsp;expression</td>
+<td nowrap>reduce&nbsp;expression_list&nbsp;->&nbsp;expression</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression_list&nbsp;->&nbsp;expression</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>8</td>
+<td nowrap>shift&nbsp;16</td>
+<td nowrap>shift&nbsp;17</td>
+<td nowrap>shift&nbsp;18</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;19</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;20</td>
+<td nowrap>shift&nbsp;21</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;23</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>22</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>9</td>
+<td nowrap>10</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>11</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>12</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>13</td>
+<td nowrap>14</td>
+<td nowrap>15</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>9</td>
+<td nowrap>shift&nbsp;26</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>24</td>
+<td nowrap>25</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>10</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;27</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>11</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;declarator_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;declarator_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;declarator_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;declarator_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;declarator_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;declarator_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;declarator_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>12</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;assignment_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;assignment_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;assignment_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;assignment_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;assignment_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;assignment_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;assignment_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>13</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;select_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;select_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;select_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;select_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;select_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;select_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;select_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>14</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;iterator_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;iterator_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;iterator_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;iterator_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;iterator_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;iterator_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;iterator_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>15</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;func_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;func_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;func_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;func_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;func_e</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;func_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;func_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>16</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;28</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;29</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>17</td>
+<td nowrap>reduce&nbsp;type&nbsp;->&nbsp;INT</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>18</td>
+<td nowrap>reduce&nbsp;type&nbsp;->&nbsp;FLOAT</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>19</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;30</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>20</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;31</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>21</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;32</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>22</td>
+<td nowrap>reduce&nbsp;expression_list&nbsp;->&nbsp;expression_list&nbsp;expression</td>
+<td nowrap>reduce&nbsp;expression_list&nbsp;->&nbsp;expression_list&nbsp;expression</td>
+<td nowrap>reduce&nbsp;expression_list&nbsp;->&nbsp;expression_list&nbsp;expression</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression_list&nbsp;->&nbsp;expression_list&nbsp;expression</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression_list&nbsp;->&nbsp;expression_list&nbsp;expression</td>
+<td nowrap>reduce&nbsp;expression_list&nbsp;->&nbsp;expression_list&nbsp;expression</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression_list&nbsp;->&nbsp;expression_list&nbsp;expression</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>23</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;p&nbsp;->&nbsp;INT&nbsp;ID&nbsp;(&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>24</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;33</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator_list&nbsp;->&nbsp;declarator</td>
+<td nowrap>reduce&nbsp;declarator_list&nbsp;->&nbsp;declarator</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>25</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;34</td>
+<td nowrap>shift&nbsp;35</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>26</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>shift&nbsp;29</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>27</td>
+<td nowrap>shift&nbsp;40</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;41</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>36</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>37</td>
+<td nowrap>38</td>
+<td nowrap>39</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>28</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;42</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>29</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;43</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>30</td>
+<td nowrap>shift&nbsp;40</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;41</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>36</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>44</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>45</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>31</td>
+<td nowrap>shift&nbsp;26</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>10</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>46</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>32</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;47</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>33</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;48</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>34</td>
+<td nowrap>shift&nbsp;26</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>49</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>35</td>
+<td nowrap>reduce&nbsp;declarator_e&nbsp;->&nbsp;type&nbsp;declarator_list&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;declarator_e&nbsp;->&nbsp;type&nbsp;declarator_list&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;declarator_e&nbsp;->&nbsp;type&nbsp;declarator_list&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator_e&nbsp;->&nbsp;type&nbsp;declarator_list&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator_e&nbsp;->&nbsp;type&nbsp;declarator_list&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;declarator_e&nbsp;->&nbsp;type&nbsp;declarator_list&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator_e&nbsp;->&nbsp;type&nbsp;declarator_list&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>36</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;declarator</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;declarator</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;declarator</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;declarator</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;declarator</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;declarator</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;declarator</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;declarator</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;declarator</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;declarator</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>37</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;50</td>
+<td nowrap>shift&nbsp;51</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;52</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>38</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;add_e&nbsp;->&nbsp;multi_e</td>
+<td nowrap>reduce&nbsp;add_e&nbsp;->&nbsp;multi_e</td>
+<td nowrap>shift&nbsp;53</td>
+<td nowrap>shift&nbsp;54</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;add_e&nbsp;->&nbsp;multi_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>39</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;cast_e</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;cast_e</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;cast_e</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;cast_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;cast_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>40</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID</td>
+<td nowrap>shift&nbsp;55</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>41</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;DIGIT</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;DIGIT</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;DIGIT</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;DIGIT</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;DIGIT</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;DIGIT</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;DIGIT</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;DIGIT</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;DIGIT</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;DIGIT</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>42</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;56</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;57</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>43</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;58</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>44</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;59</td>
+<td nowrap>shift&nbsp;60</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;61</td>
+<td nowrap>shift&nbsp;62</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>45</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;63</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>46</td>
+<td nowrap>shift&nbsp;40</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;41</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>36</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>44</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>64</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>47</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;expression&nbsp;->&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>48</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;66</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>65</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>49</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator_list&nbsp;->&nbsp;declarator_list&nbsp;DOT&nbsp;declarator</td>
+<td nowrap>reduce&nbsp;declarator_list&nbsp;->&nbsp;declarator_list&nbsp;DOT&nbsp;declarator</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator_list&nbsp;->&nbsp;declarator_list&nbsp;DOT&nbsp;declarator</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>50</td>
+<td nowrap>shift&nbsp;40</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;41</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>36</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>67</td>
+<td nowrap>39</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>51</td>
+<td nowrap>shift&nbsp;40</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;41</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>36</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>68</td>
+<td nowrap>39</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>52</td>
+<td nowrap>reduce&nbsp;assignment_e&nbsp;->&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;assignment_e&nbsp;->&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;assignment_e&nbsp;->&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;assignment_e&nbsp;->&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;assignment_e&nbsp;->&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;assignment_e&nbsp;->&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;assignment_e&nbsp;->&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;assignment_e&nbsp;->&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>53</td>
+<td nowrap>shift&nbsp;40</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;41</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>36</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>69</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>54</td>
+<td nowrap>shift&nbsp;40</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;41</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>36</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>70</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>55</td>
+<td nowrap>shift&nbsp;71</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;43</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>56</td>
+<td nowrap>shift&nbsp;26</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;74</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>72</td>
+<td nowrap>73</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>57</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;75</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>58</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>59</td>
+<td nowrap>shift&nbsp;40</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;41</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>36</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>76</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>60</td>
+<td nowrap>shift&nbsp;40</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;41</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>36</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>77</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>61</td>
+<td nowrap>shift&nbsp;40</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;41</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>36</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>78</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>62</td>
+<td nowrap>shift&nbsp;40</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;41</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>36</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>79</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>63</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;80</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>64</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;81</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>65</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;82</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;83</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>66</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;digit_list&nbsp;->&nbsp;DIGIT</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;digit_list&nbsp;->&nbsp;DIGIT</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>67</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;add_e&nbsp;->&nbsp;add_e&nbsp;+&nbsp;multi_e</td>
+<td nowrap>reduce&nbsp;add_e&nbsp;->&nbsp;add_e&nbsp;+&nbsp;multi_e</td>
+<td nowrap>shift&nbsp;53</td>
+<td nowrap>shift&nbsp;54</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;add_e&nbsp;->&nbsp;add_e&nbsp;+&nbsp;multi_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>68</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;add_e&nbsp;->&nbsp;add_e&nbsp;-&nbsp;multi_e</td>
+<td nowrap>reduce&nbsp;add_e&nbsp;->&nbsp;add_e&nbsp;-&nbsp;multi_e</td>
+<td nowrap>shift&nbsp;53</td>
+<td nowrap>shift&nbsp;54</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;add_e&nbsp;->&nbsp;add_e&nbsp;-&nbsp;multi_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>69</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;multi_e&nbsp;*&nbsp;cast_e</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;multi_e&nbsp;*&nbsp;cast_e</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;multi_e&nbsp;*&nbsp;cast_e</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;multi_e&nbsp;*&nbsp;cast_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;multi_e&nbsp;*&nbsp;cast_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>70</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;multi_e&nbsp;/&nbsp;cast_e</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;multi_e&nbsp;/&nbsp;cast_e</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;multi_e&nbsp;/&nbsp;cast_e</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;multi_e&nbsp;/&nbsp;cast_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;multi_e&nbsp;->&nbsp;multi_e&nbsp;/&nbsp;cast_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>71</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;84</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>72</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator_list&nbsp;->&nbsp;declarator</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator_list&nbsp;->&nbsp;declarator</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>73</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;34</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;85</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>74</td>
+<td nowrap>shift&nbsp;86</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>75</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>76</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;bool_e&nbsp;->&nbsp;cast_e&nbsp;>&nbsp;cast_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;bool_e&nbsp;->&nbsp;cast_e&nbsp;>&nbsp;cast_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>77</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;bool_e&nbsp;->&nbsp;cast_e&nbsp;<&nbsp;cast_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;bool_e&nbsp;->&nbsp;cast_e&nbsp;<&nbsp;cast_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>78</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;bool_e&nbsp;->&nbsp;cast_e&nbsp;>=&nbsp;cast_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;bool_e&nbsp;->&nbsp;cast_e&nbsp;>=&nbsp;cast_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>79</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;bool_e&nbsp;->&nbsp;cast_e&nbsp;<=&nbsp;cast_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;bool_e&nbsp;->&nbsp;cast_e&nbsp;<=&nbsp;cast_e</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>80</td>
+<td nowrap>shift&nbsp;16</td>
+<td nowrap>shift&nbsp;17</td>
+<td nowrap>shift&nbsp;18</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;19</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;20</td>
+<td nowrap>shift&nbsp;21</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>7</td>
+<td nowrap>87</td>
+<td nowrap>9</td>
+<td nowrap>10</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>11</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>12</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>13</td>
+<td nowrap>14</td>
+<td nowrap>15</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>81</td>
+<td nowrap>shift&nbsp;89</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>88</td>
+</tr>
+<tr>
+<td nowrap>82</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;90</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>83</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;91</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>84</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;cast_e&nbsp;->&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>85</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;92</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>86</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;93</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>87</td>
+<td nowrap>shift&nbsp;16</td>
+<td nowrap>shift&nbsp;17</td>
+<td nowrap>shift&nbsp;18</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;19</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;20</td>
+<td nowrap>shift&nbsp;21</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;94</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>22</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>9</td>
+<td nowrap>10</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>11</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>12</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>13</td>
+<td nowrap>14</td>
+<td nowrap>15</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>88</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;95</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>89</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;96</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>90</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;digit_list&nbsp;->&nbsp;digit_list&nbsp;DOT&nbsp;DIGIT</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;digit_list&nbsp;->&nbsp;digit_list&nbsp;DOT&nbsp;DIGIT</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>91</td>
+<td nowrap>reduce&nbsp;declarator_e&nbsp;->&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;declarator_e&nbsp;->&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;declarator_e&nbsp;->&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator_e&nbsp;->&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator_e&nbsp;->&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;declarator_e&nbsp;->&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;declarator_e&nbsp;->&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>92</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>93</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;97</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>94</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;98</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>95</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;99</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>96</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;inc_e&nbsp;->&nbsp;ID&nbsp;INC</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>97</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>98</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;100</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>99</td>
+<td nowrap>shift&nbsp;16</td>
+<td nowrap>shift&nbsp;17</td>
+<td nowrap>shift&nbsp;18</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;19</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;20</td>
+<td nowrap>shift&nbsp;21</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>7</td>
+<td nowrap>101</td>
+<td nowrap>9</td>
+<td nowrap>10</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>11</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>12</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>13</td>
+<td nowrap>14</td>
+<td nowrap>15</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>100</td>
+<td nowrap>shift&nbsp;16</td>
+<td nowrap>shift&nbsp;17</td>
+<td nowrap>shift&nbsp;18</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;19</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;20</td>
+<td nowrap>shift&nbsp;21</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>7</td>
+<td nowrap>102</td>
+<td nowrap>9</td>
+<td nowrap>10</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>11</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>12</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>13</td>
+<td nowrap>14</td>
+<td nowrap>15</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>101</td>
+<td nowrap>shift&nbsp;16</td>
+<td nowrap>shift&nbsp;17</td>
+<td nowrap>shift&nbsp;18</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;19</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;20</td>
+<td nowrap>shift&nbsp;21</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;103</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>22</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>9</td>
+<td nowrap>10</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>11</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>12</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>13</td>
+<td nowrap>14</td>
+<td nowrap>15</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>102</td>
+<td nowrap>shift&nbsp;16</td>
+<td nowrap>shift&nbsp;17</td>
+<td nowrap>shift&nbsp;18</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;19</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;20</td>
+<td nowrap>shift&nbsp;21</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>shift&nbsp;104</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>22</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>9</td>
+<td nowrap>10</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>11</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>12</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>13</td>
+<td nowrap>14</td>
+<td nowrap>15</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>103</td>
+<td nowrap>reduce&nbsp;iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>reduce&nbsp;iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>reduce&nbsp;iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>reduce&nbsp;iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<td nowrap>104</td>
+<td nowrap>reduce&nbsp;select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>reduce&nbsp;select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>reduce&nbsp;select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>reduce&nbsp;select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>reduce&nbsp;select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+<td nowrap>&nbsp;</td>
+</tr>
+</table>
+<br>
+<br>
+项目集规范族：<br>
+<br>
+I0:<br>
+p'&nbsp;->&nbsp;.&nbsp;p&nbsp;,&nbsp;[&nbsp;$&nbsp;]<br>
+p&nbsp;->&nbsp;.&nbsp;INT&nbsp;ID&nbsp;(&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;$&nbsp;]<br>
+<br>
+I1:<br>
+p'&nbsp;->&nbsp;p&nbsp;.&nbsp;,&nbsp;[&nbsp;$&nbsp;]<br>
+<br>
+I2:<br>
+p&nbsp;->&nbsp;INT&nbsp;.&nbsp;ID&nbsp;(&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;$&nbsp;]<br>
+<br>
+I3:<br>
+p&nbsp;->&nbsp;INT&nbsp;ID&nbsp;.&nbsp;(&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;$&nbsp;]<br>
+<br>
+I4:<br>
+p&nbsp;->&nbsp;INT&nbsp;ID&nbsp;(&nbsp;.&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;$&nbsp;]<br>
+<br>
+I5:<br>
+p&nbsp;->&nbsp;INT&nbsp;ID&nbsp;(&nbsp;)&nbsp;.&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;$&nbsp;]<br>
+<br>
+I6:<br>
+p&nbsp;->&nbsp;INT&nbsp;ID&nbsp;(&nbsp;)&nbsp;{&nbsp;.&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;$&nbsp;]<br>
+expression_list&nbsp;->&nbsp;.&nbsp;expression&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression_list&nbsp;->&nbsp;.&nbsp;expression_list&nbsp;expression&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;declarator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;assignment_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;select_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;iterator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;func_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator_list&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+assignment_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+select_e&nbsp;->&nbsp;.&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+iterator_e&nbsp;->&nbsp;.&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;INT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;FLOAT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+<br>
+I7:<br>
+expression_list&nbsp;->&nbsp;expression&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I8:<br>
+p&nbsp;->&nbsp;INT&nbsp;ID&nbsp;(&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;.&nbsp;}&nbsp;,&nbsp;[&nbsp;$&nbsp;]<br>
+expression_list&nbsp;->&nbsp;expression_list&nbsp;.&nbsp;expression&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;declarator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;assignment_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;select_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;iterator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;func_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator_list&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+assignment_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+select_e&nbsp;->&nbsp;.&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+iterator_e&nbsp;->&nbsp;.&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;INT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;FLOAT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+<br>
+I9:<br>
+declarator_e&nbsp;->&nbsp;type&nbsp;.&nbsp;declarator_list&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;type&nbsp;.&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_list&nbsp;->&nbsp;.&nbsp;declarator&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;]<br>
+declarator_list&nbsp;->&nbsp;.&nbsp;declarator_list&nbsp;DOT&nbsp;declarator&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;=&nbsp;,&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;=&nbsp;,&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;]<br>
+<br>
+I10:<br>
+assignment_e&nbsp;->&nbsp;declarator&nbsp;.&nbsp;=&nbsp;add_e&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;,&nbsp;DIGIT&nbsp;]<br>
+<br>
+I11:<br>
+expression&nbsp;->&nbsp;declarator_e&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I12:<br>
+expression&nbsp;->&nbsp;assignment_e&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I13:<br>
+expression&nbsp;->&nbsp;select_e&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I14:<br>
+expression&nbsp;->&nbsp;iterator_e&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I15:<br>
+expression&nbsp;->&nbsp;func_e&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I16:<br>
+func_e&nbsp;->&nbsp;ID&nbsp;.&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;ID&nbsp;.&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;ID&nbsp;.&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator&nbsp;->&nbsp;ID&nbsp;.&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+declarator&nbsp;->&nbsp;ID&nbsp;.&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+<br>
+I17:<br>
+type&nbsp;->&nbsp;INT&nbsp;.&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+<br>
+I18:<br>
+type&nbsp;->&nbsp;FLOAT&nbsp;.&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+<br>
+I19:<br>
+select_e&nbsp;->&nbsp;IF&nbsp;.&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I20:<br>
+iterator_e&nbsp;->&nbsp;FOR&nbsp;.&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I21:<br>
+expression&nbsp;->&nbsp;RETURN&nbsp;.&nbsp;DIGIT&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I22:<br>
+expression_list&nbsp;->&nbsp;expression_list&nbsp;expression&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I23:<br>
+p&nbsp;->&nbsp;INT&nbsp;ID&nbsp;(&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;.&nbsp;,&nbsp;[&nbsp;$&nbsp;]<br>
+<br>
+I24:<br>
+declarator_e&nbsp;->&nbsp;type&nbsp;declarator&nbsp;.&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_list&nbsp;->&nbsp;declarator&nbsp;.&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;]<br>
+<br>
+I25:<br>
+declarator_e&nbsp;->&nbsp;type&nbsp;declarator_list&nbsp;.&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_list&nbsp;->&nbsp;declarator_list&nbsp;.&nbsp;DOT&nbsp;declarator&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;]<br>
+<br>
+I26:<br>
+declarator&nbsp;->&nbsp;ID&nbsp;.&nbsp;,&nbsp;[&nbsp;=&nbsp;,&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;,&nbsp;)&nbsp;]<br>
+declarator&nbsp;->&nbsp;ID&nbsp;.&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;=&nbsp;,&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;,&nbsp;)&nbsp;]<br>
+<br>
+I27:<br>
+assignment_e&nbsp;->&nbsp;declarator&nbsp;=&nbsp;.&nbsp;add_e&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;,&nbsp;DIGIT&nbsp;]<br>
+add_e&nbsp;->&nbsp;.&nbsp;multi_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+add_e&nbsp;->&nbsp;.&nbsp;add_e&nbsp;+&nbsp;multi_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+add_e&nbsp;->&nbsp;.&nbsp;add_e&nbsp;-&nbsp;multi_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+multi_e&nbsp;->&nbsp;.&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+multi_e&nbsp;->&nbsp;.&nbsp;multi_e&nbsp;*&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+multi_e&nbsp;->&nbsp;.&nbsp;multi_e&nbsp;/&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+<br>
+I28:<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;.&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;.&nbsp;STR&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;.&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I29:<br>
+declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;.&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;=&nbsp;,&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;,&nbsp;)&nbsp;]<br>
+<br>
+I30:<br>
+select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;.&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+bool_e&nbsp;->&nbsp;.&nbsp;cast_e&nbsp;<&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;)&nbsp;]<br>
+bool_e&nbsp;->&nbsp;.&nbsp;cast_e&nbsp;>&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;)&nbsp;]<br>
+bool_e&nbsp;->&nbsp;.&nbsp;cast_e&nbsp;<=&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;)&nbsp;]<br>
+bool_e&nbsp;->&nbsp;.&nbsp;cast_e&nbsp;>=&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;)&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;,&nbsp;[&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]&nbsp;,&nbsp;[&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;]<br>
+<br>
+I31:<br>
+iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;.&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+assignment_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM&nbsp;,&nbsp;[&nbsp;ID&nbsp;,&nbsp;DIGIT&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+<br>
+I32:<br>
+expression&nbsp;->&nbsp;RETURN&nbsp;DIGIT&nbsp;.&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I33:<br>
+declarator_e&nbsp;->&nbsp;type&nbsp;declarator&nbsp;=&nbsp;.&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I34:<br>
+declarator_list&nbsp;->&nbsp;declarator_list&nbsp;DOT&nbsp;.&nbsp;declarator&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;,&nbsp;)&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;,&nbsp;)&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;,&nbsp;)&nbsp;]<br>
+<br>
+I35:<br>
+declarator_e&nbsp;->&nbsp;type&nbsp;declarator_list&nbsp;SEM&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I36:<br>
+cast_e&nbsp;->&nbsp;declarator&nbsp;.&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;,&nbsp;)&nbsp;]<br>
+<br>
+I37:<br>
+assignment_e&nbsp;->&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;.&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;,&nbsp;DIGIT&nbsp;]<br>
+add_e&nbsp;->&nbsp;add_e&nbsp;.&nbsp;+&nbsp;multi_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+add_e&nbsp;->&nbsp;add_e&nbsp;.&nbsp;-&nbsp;multi_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+<br>
+I38:<br>
+add_e&nbsp;->&nbsp;multi_e&nbsp;.&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+multi_e&nbsp;->&nbsp;multi_e&nbsp;.&nbsp;*&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+multi_e&nbsp;->&nbsp;multi_e&nbsp;.&nbsp;/&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+<br>
+I39:<br>
+multi_e&nbsp;->&nbsp;cast_e&nbsp;.&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+<br>
+I40:<br>
+cast_e&nbsp;->&nbsp;ID&nbsp;.&nbsp;[&nbsp;ID&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;,&nbsp;)&nbsp;]<br>
+declarator&nbsp;->&nbsp;ID&nbsp;.&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;,&nbsp;)&nbsp;]<br>
+declarator&nbsp;->&nbsp;ID&nbsp;.&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;,&nbsp;)&nbsp;]<br>
+<br>
+I41:<br>
+cast_e&nbsp;->&nbsp;DIGIT&nbsp;.&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;,&nbsp;)&nbsp;]<br>
+<br>
+I42:<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;.&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;.&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;.&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I43:<br>
+declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;.&nbsp;]&nbsp;,&nbsp;[&nbsp;=&nbsp;,&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;,&nbsp;)&nbsp;]<br>
+<br>
+I44:<br>
+bool_e&nbsp;->&nbsp;cast_e&nbsp;.&nbsp;<&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+bool_e&nbsp;->&nbsp;cast_e&nbsp;.&nbsp;>&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+bool_e&nbsp;->&nbsp;cast_e&nbsp;.&nbsp;<=&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+bool_e&nbsp;->&nbsp;cast_e&nbsp;.&nbsp;>=&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+<br>
+I45:<br>
+select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;.&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I46:<br>
+iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;.&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+bool_e&nbsp;->&nbsp;.&nbsp;cast_e&nbsp;<&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;]<br>
+bool_e&nbsp;->&nbsp;.&nbsp;cast_e&nbsp;>&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;]<br>
+bool_e&nbsp;->&nbsp;.&nbsp;cast_e&nbsp;<=&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;]<br>
+bool_e&nbsp;->&nbsp;.&nbsp;cast_e&nbsp;>=&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;,&nbsp;[&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]&nbsp;,&nbsp;[&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;]<br>
+<br>
+I47:<br>
+expression&nbsp;->&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I48:<br>
+declarator_e&nbsp;->&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;.&nbsp;digit_list&nbsp;}&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+digit_list&nbsp;->&nbsp;.&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;DOT&nbsp;]<br>
+digit_list&nbsp;->&nbsp;.&nbsp;digit_list&nbsp;DOT&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;DOT&nbsp;]<br>
+<br>
+I49:<br>
+declarator_list&nbsp;->&nbsp;declarator_list&nbsp;DOT&nbsp;declarator&nbsp;.&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;,&nbsp;)&nbsp;]<br>
+<br>
+I50:<br>
+add_e&nbsp;->&nbsp;add_e&nbsp;+&nbsp;.&nbsp;multi_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+multi_e&nbsp;->&nbsp;.&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+multi_e&nbsp;->&nbsp;.&nbsp;multi_e&nbsp;*&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+multi_e&nbsp;->&nbsp;.&nbsp;multi_e&nbsp;/&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+<br>
+I51:<br>
+add_e&nbsp;->&nbsp;add_e&nbsp;-&nbsp;.&nbsp;multi_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+multi_e&nbsp;->&nbsp;.&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+multi_e&nbsp;->&nbsp;.&nbsp;multi_e&nbsp;*&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+multi_e&nbsp;->&nbsp;.&nbsp;multi_e&nbsp;/&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+<br>
+I52:<br>
+assignment_e&nbsp;->&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;,&nbsp;DIGIT&nbsp;]<br>
+<br>
+I53:<br>
+multi_e&nbsp;->&nbsp;multi_e&nbsp;*&nbsp;.&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+<br>
+I54:<br>
+multi_e&nbsp;->&nbsp;multi_e&nbsp;/&nbsp;.&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+<br>
+I55:<br>
+cast_e&nbsp;->&nbsp;ID&nbsp;[&nbsp;.&nbsp;ID&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;,&nbsp;)&nbsp;]<br>
+declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;.&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;,&nbsp;)&nbsp;]<br>
+<br>
+I56:<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;.&nbsp;declarator_list&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;.&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_list&nbsp;->&nbsp;.&nbsp;declarator&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;DOT&nbsp;]<br>
+declarator_list&nbsp;->&nbsp;.&nbsp;declarator_list&nbsp;DOT&nbsp;declarator&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;DOT&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;DOT&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;DOT&nbsp;]<br>
+<br>
+I57:<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;.&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I58:<br>
+declarator&nbsp;->&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;.&nbsp;,&nbsp;[&nbsp;=&nbsp;,&nbsp;SEM&nbsp;,&nbsp;DOT&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;,&nbsp;)&nbsp;]<br>
+<br>
+I59:<br>
+bool_e&nbsp;->&nbsp;cast_e&nbsp;>&nbsp;.&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+<br>
+I60:<br>
+bool_e&nbsp;->&nbsp;cast_e&nbsp;<&nbsp;.&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+<br>
+I61:<br>
+bool_e&nbsp;->&nbsp;cast_e&nbsp;>=&nbsp;.&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+<br>
+I62:<br>
+bool_e&nbsp;->&nbsp;cast_e&nbsp;<=&nbsp;.&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+cast_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+<br>
+I63:<br>
+select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;.&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I64:<br>
+iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;.&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I65:<br>
+declarator_e&nbsp;->&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;.&nbsp;}&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+digit_list&nbsp;->&nbsp;digit_list&nbsp;.&nbsp;DOT&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;DOT&nbsp;]<br>
+<br>
+I66:<br>
+digit_list&nbsp;->&nbsp;DIGIT&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;DOT&nbsp;]<br>
+<br>
+I67:<br>
+add_e&nbsp;->&nbsp;add_e&nbsp;+&nbsp;multi_e&nbsp;.&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+multi_e&nbsp;->&nbsp;multi_e&nbsp;.&nbsp;*&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+multi_e&nbsp;->&nbsp;multi_e&nbsp;.&nbsp;/&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+<br>
+I68:<br>
+add_e&nbsp;->&nbsp;add_e&nbsp;-&nbsp;multi_e&nbsp;.&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+multi_e&nbsp;->&nbsp;multi_e&nbsp;.&nbsp;*&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+multi_e&nbsp;->&nbsp;multi_e&nbsp;.&nbsp;/&nbsp;cast_e&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;]<br>
+<br>
+I69:<br>
+multi_e&nbsp;->&nbsp;multi_e&nbsp;*&nbsp;cast_e&nbsp;.&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+<br>
+I70:<br>
+multi_e&nbsp;->&nbsp;multi_e&nbsp;/&nbsp;cast_e&nbsp;.&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;]<br>
+<br>
+I71:<br>
+cast_e&nbsp;->&nbsp;ID&nbsp;[&nbsp;ID&nbsp;.&nbsp;]&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;,&nbsp;)&nbsp;]<br>
+<br>
+I72:<br>
+declarator_list&nbsp;->&nbsp;declarator&nbsp;.&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;DOT&nbsp;]<br>
+<br>
+I73:<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;.&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_list&nbsp;->&nbsp;declarator_list&nbsp;.&nbsp;DOT&nbsp;declarator&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;DOT&nbsp;]<br>
+<br>
+I74:<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;.&nbsp;ID&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I75:<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I76:<br>
+bool_e&nbsp;->&nbsp;cast_e&nbsp;>&nbsp;cast_e&nbsp;.&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+<br>
+I77:<br>
+bool_e&nbsp;->&nbsp;cast_e&nbsp;<&nbsp;cast_e&nbsp;.&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+<br>
+I78:<br>
+bool_e&nbsp;->&nbsp;cast_e&nbsp;>=&nbsp;cast_e&nbsp;.&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+<br>
+I79:<br>
+bool_e&nbsp;->&nbsp;cast_e&nbsp;<=&nbsp;cast_e&nbsp;.&nbsp;,&nbsp;[&nbsp;)&nbsp;,&nbsp;SEM&nbsp;]<br>
+<br>
+I80:<br>
+select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;.&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression_list&nbsp;->&nbsp;.&nbsp;expression&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression_list&nbsp;->&nbsp;.&nbsp;expression_list&nbsp;expression&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;declarator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;assignment_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;select_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;iterator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;func_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator_list&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+assignment_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+select_e&nbsp;->&nbsp;.&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+iterator_e&nbsp;->&nbsp;.&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;INT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;FLOAT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+<br>
+I81:<br>
+iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;.&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+inc_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;INC&nbsp;,&nbsp;[&nbsp;)&nbsp;]<br>
+<br>
+I82:<br>
+digit_list&nbsp;->&nbsp;digit_list&nbsp;DOT&nbsp;.&nbsp;DIGIT&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;DOT&nbsp;]<br>
+<br>
+I83:<br>
+declarator_e&nbsp;->&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;.&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I84:<br>
+cast_e&nbsp;->&nbsp;ID&nbsp;[&nbsp;ID&nbsp;]&nbsp;.&nbsp;,&nbsp;[&nbsp;SEM&nbsp;,&nbsp;*&nbsp;,&nbsp;/&nbsp;,&nbsp;+&nbsp;,&nbsp;-&nbsp;,&nbsp;<&nbsp;,&nbsp;>&nbsp;,&nbsp;<=&nbsp;,&nbsp;>=&nbsp;,&nbsp;)&nbsp;]<br>
+<br>
+I85:<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;.&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I86:<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;.&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I87:<br>
+select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;.&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression_list&nbsp;->&nbsp;expression_list&nbsp;.&nbsp;expression&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;declarator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;assignment_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;select_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;iterator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;func_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator_list&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+assignment_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+select_e&nbsp;->&nbsp;.&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+iterator_e&nbsp;->&nbsp;.&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;INT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;FLOAT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+<br>
+I88:<br>
+iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;.&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I89:<br>
+inc_e&nbsp;->&nbsp;ID&nbsp;.&nbsp;INC&nbsp;,&nbsp;[&nbsp;)&nbsp;]<br>
+<br>
+I90:<br>
+digit_list&nbsp;->&nbsp;digit_list&nbsp;DOT&nbsp;DIGIT&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;DOT&nbsp;]<br>
+<br>
+I91:<br>
+declarator_e&nbsp;->&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I92:<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I93:<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;.&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I94:<br>
+select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;.&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I95:<br>
+iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;.&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I96:<br>
+inc_e&nbsp;->&nbsp;ID&nbsp;INC&nbsp;.&nbsp;,&nbsp;[&nbsp;)&nbsp;]<br>
+<br>
+I97:<br>
+func_e&nbsp;->&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I98:<br>
+select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;.&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I99:<br>
+iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;.&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression_list&nbsp;->&nbsp;.&nbsp;expression&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression_list&nbsp;->&nbsp;.&nbsp;expression_list&nbsp;expression&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;declarator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;assignment_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;select_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;iterator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;func_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator_list&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+assignment_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+select_e&nbsp;->&nbsp;.&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+iterator_e&nbsp;->&nbsp;.&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;INT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;FLOAT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+<br>
+I100:<br>
+select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;.&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression_list&nbsp;->&nbsp;.&nbsp;expression&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression_list&nbsp;->&nbsp;.&nbsp;expression_list&nbsp;expression&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;declarator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;assignment_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;select_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;iterator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;func_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator_list&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+assignment_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+select_e&nbsp;->&nbsp;.&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+iterator_e&nbsp;->&nbsp;.&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;INT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;FLOAT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+<br>
+I101:<br>
+iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;.&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression_list&nbsp;->&nbsp;expression_list&nbsp;.&nbsp;expression&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;declarator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;assignment_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;select_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;iterator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;func_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator_list&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+assignment_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+select_e&nbsp;->&nbsp;.&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+iterator_e&nbsp;->&nbsp;.&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;INT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;FLOAT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+<br>
+I102:<br>
+select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;.&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression_list&nbsp;->&nbsp;expression_list&nbsp;.&nbsp;expression&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;declarator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;assignment_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;select_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;iterator_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;func_e&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+expression&nbsp;->&nbsp;.&nbsp;RETURN&nbsp;DIGIT&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator_list&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+declarator_e&nbsp;->&nbsp;.&nbsp;type&nbsp;declarator&nbsp;=&nbsp;{&nbsp;digit_list&nbsp;}&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+assignment_e&nbsp;->&nbsp;.&nbsp;declarator&nbsp;=&nbsp;add_e&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+select_e&nbsp;->&nbsp;.&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+iterator_e&nbsp;->&nbsp;.&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;declarator_list&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+func_e&nbsp;->&nbsp;.&nbsp;ID&nbsp;(&nbsp;STR&nbsp;DOT&nbsp;AND&nbsp;ID&nbsp;)&nbsp;SEM&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;INT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+type&nbsp;->&nbsp;.&nbsp;FLOAT&nbsp;,&nbsp;[&nbsp;ID&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+declarator&nbsp;->&nbsp;.&nbsp;ID&nbsp;[&nbsp;DIGIT&nbsp;]&nbsp;,&nbsp;[&nbsp;=&nbsp;]<br>
+<br>
+I103:<br>
+iterator_e&nbsp;->&nbsp;FOR&nbsp;(&nbsp;assignment_e&nbsp;bool_e&nbsp;SEM&nbsp;inc_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+I104:<br>
+select_e&nbsp;->&nbsp;IF&nbsp;(&nbsp;bool_e&nbsp;)&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;ELSE&nbsp;{&nbsp;expression_list&nbsp;}&nbsp;.&nbsp;,&nbsp;[&nbsp;}&nbsp;,&nbsp;INT&nbsp;,&nbsp;FLOAT&nbsp;,&nbsp;ID&nbsp;,&nbsp;RETURN&nbsp;,&nbsp;IF&nbsp;,&nbsp;FOR&nbsp;]<br>
+<br>
+</body>
+</html>
