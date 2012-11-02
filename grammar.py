@@ -214,26 +214,35 @@ while True:
             #print right_exp[0]['value'],right_exp[2]['value']
             #print 'movl ' + str(f_table[right_exp[0]['value']]) + ',%eax'
             output.append('movl ' + str(f_table[right_exp[0]['value']]) + ',%eax')
-            print 'movl ' + str(f_table[right_exp[2]['value']]) + ',%ebx'
-            print 'mull %ebx'
-            print 'movl %eax,' + 'tmp' + str(f_table['tmp'])
+            #print 'movl ' + str(f_table[right_exp[2]['value']]) + ',%ebx'
+            outputstr.append('movl ' + str(f_table[right_exp[2]['value']]) + ',%ebx')
+            #print 'mull %ebx'
+            outputstr.append('mull %ebx')
+            #print 'movl %eax,' + 'tmp' + str(f_table['tmp'])
+            outputstr.append('movl %eax,' + 'tmp' + str(f_table['tmp']))
             words_stack.append({'name':act[0],'value':'multi_e'})
             f_table['multi_e'] = 'tmp' + str(f_table['tmp'])
             f_table['tmp'] += 1
 
         elif expression == "add_e -> add_e + multi_e":
-            print 'movl -' + str(f_table[right_exp[0]['value']]) +'(%ebp)'  + ',%eax'
-            print 'movl '  + str(f_table[right_exp[2]['value']]) + ',%ebx'
-            print 'addl %ebx,%eax'
-            print 'movl %eax,' + 'tmp' + str(f_table['tmp'])
+            #print 'movl -' + str(f_table[right_exp[0]['value']]) +'(%ebp)'  + ',%eax'
+            outputstr.append('movl -' + str(f_table[right_exp[0]['value']]) +'(%ebp)'  + ',%eax')
+            #print 'movl '  + str(f_table[right_exp[2]['value']]) + ',%ebx'
+            outputstr.append('movl '  + str(f_table[right_exp[2]['value']]) + ',%ebx')
+            #print 'addl %ebx,%eax'
+            outputstr.append('addl %ebx,%eax')
+            #print 'movl %eax,' + 'tmp' + str(f_table['tmp'])
+            outputstr.append('movl %eax,' + 'tmp' + str(f_table['tmp']))
             f_table['add_e'] = 'tmp' + str(f_table['tmp']);
             f_table['tmp'] += 1
             words_stack.append({'name':act[0],'value':'add_e','type':'array'})
 
         elif expression == "iterator_e -> FOR ( assignment_e bool_e SEM inc_e ) { expression_list }":
-            print right_exp[5]['value']
-            print 'jmp start_for'
-            print 'end_for:'
+            #print right_exp[5]['value']
+            #print 'jmp start_for'
+            outputstr.append('jmp start_for')
+            #print 'end_for:'
+            outputstr.append('end_for:')
             words_stack.append({'name':act[0]})
 
         elif expression == "expression -> iterator_e":
@@ -241,31 +250,45 @@ while True:
             words_stack.append({'name':act[0]})
 
         elif expression == "multi_e -> multi_e / cast_e":
-            print 'movl -' + str(f_table[right_exp[0]['value']]) +'(%ebp)' + ',%eax'
-            print 'movl -' + str(f_table[right_exp[2]['value']]) +'(%ebp)' + ',%ebx'
-            print 'divl %ebx'
-            print 'movl %eax,' + 'tmp' + str(f_table['tmp'])
+            #print 'movl -' + str(f_table[right_exp[0]['value']]) +'(%ebp)' + ',%eax'
+            outputstr.append('movl -' + str(f_table[right_exp[0]['value']]) +'(%ebp)' + ',%eax')
+            #print 'movl -' + str(f_table[right_exp[2]['value']]) +'(%ebp)' + ',%ebx'
+            outputstr.append('movl -' + str(f_table[right_exp[2]['value']]) +'(%ebp)' + ',%ebx')
+            #print 'divl %ebx'
+            outputstr.append('divl %ebx')`
+            #print 'movl %eax,' + 'tmp' + str(f_table['tmp'])
+            outputstr.append('movl %eax,' + 'tmp' + str(f_table['tmp']))
             words_stack.append({'name':act[0],'value':'multi_e','type':'array'})
             f_table['multi_e'] = 'tmp' + str(f_table['tmp'])
             f_table['tmp'] += 1
 
 
         elif expression == "bool_e -> cast_e >= cast_e":
-            print 'movl -' + str(f_table[right_exp[0]['value']]) +'(%ebp)' + ',%eax'
-            print 'movl $' + right_exp[2]['value'] + ', %ebx'
-            print 'cmp %ebx, %eax'
-            print 'jb else'
+            #print 'movl -' + str(f_table[right_exp[0]['value']]) +'(%ebp)' + ',%eax'
+            outputstr.append('movl -' + str(f_table[right_exp[0]['value']]) +'(%ebp)' + ',%eax')
+            #print 'movl $' + right_exp[2]['value'] + ', %ebx'
+            outputstr.append('movl $' + right_exp[2]['value'] + ', %ebx')
+            #print 'cmp %ebx, %eax'
+            outputstr.append('cmp %ebx, %eax')
+            #print 'jb else'
+            outputstr.append('jb else')
             words_stack.append({'name':act[0]})
 
         elif expression == "add_e -> add_e - multi_e":
             if right_exp[0]['type'] == 'digit':
-                print 'movl $' + right_exp[0]['value'] + ',%eax'
-                print 'movl -' + str(f_table[right_exp[2]['value']]) +'(%ebp)'  + ',%ebx'
+                #print 'movl $' + right_exp[0]['value'] + ',%eax'
+                outputstr.append('movl $' + right_exp[0]['value'] + ',%eax')
+                #print 'movl -' + str(f_table[right_exp[2]['value']]) +'(%ebp)'  + ',%ebx'
+                outputstr.append('movl -' + str(f_table[right_exp[2]['value']]) +'(%ebp)'  + ',%ebx')
             else:
-                print 'movl -' + str(f_table[right_exp[0]['value']]) +'(%ebp)'  + ',%eax'
-                print 'movl $' + right_exp[2]['value'] + ',%ebx'
-            print 'subl %ebx,%eax'
-            print 'movl %eax,' + 'tmp' + str(f_table['tmp'])
+                #print 'movl -' + str(f_table[right_exp[0]['value']]) +'(%ebp)'  + ',%eax'
+                outputstr.append('movl -' + str(f_table[right_exp[0]['value']]) +'(%ebp)'  + ',%eax')
+                #print 'movl $' + right_exp[2]['value'] + ',%ebx'
+                outputstr.append('movl $' + right_exp[2]['value'] + ',%ebx')
+            #print 'subl %ebx,%eax'
+            outputstr.append('subl %ebx,%eax')
+            #print 'movl %eax,' + 'tmp' + str(f_table['tmp'])
+            outputstr.append('movl %eax,' + 'tmp' + str(f_table['tmp']))
             f_table['add_e'] = 'tmp' + str(f_table['tmp']);
             f_table['tmp'] += 1
             words_stack.append({'name':act[0],'value':'add_e','type':'array'})
@@ -273,19 +296,25 @@ while True:
         elif expression == "func_e -> ID ( STR DOT declarator_list ) SEM":
             #print right_exp[4]
             for v in right_exp[4]['value']:
-                print 'pushl -' + str(f_table[v]) +'(%ebp)'
+                #print 'pushl -' + str(f_table[v]) +'(%ebp)'
+                outputstr.append('pushl -' + str(f_table[v]) +'(%ebp)')
             count = len(right_exp[4]['value']) + 1
             #print '.LC' + str(f_table['label']) + ':\n.string ' + right_exp[2]['value']
             out_strings.append('.LC' + str(f_table['label']) + ': .string ' + right_exp[2]['value'])
-            print 'pushl .LC' + str(f_table['label'])
+            #print 'pushl .LC' + str(f_table['label'])
+            outputstr.append('pushl .LC' + str(f_table['label']))
             f_table['label'] += 1
-            print 'call printf'
-            print 'addl $' + str(count * 4) + ',%esp'
-            print 'jmp end'
+            #print 'call printf'
+            outputstr.append('call printf')
+            #print 'addl $' + str(count * 4) + ',%esp'
+            outputstr.append('addl $' + str(count * 4) + ',%esp')
+            #print 'jmp end'
+            outputstr.append('jmp end')
             words_stack.append({'name':act[0]})
             #print words_stack[-1],words_stack[-2],words_stack[-3],words_stack[-4]
             if words_stack[-4]['name'] != 'ELSE':
-                print 'else:'
+                #print 'else:'
+                outputstr.append('else:')
 
         elif expression == "select_e -> IF ( bool_e ) { expression_list } ELSE { expression_list }":
             #print expression,len(right_exp)
@@ -296,13 +325,17 @@ while True:
             words_stack.append({'name':act[0]})
 
         elif expression == "expression -> RETURN DIGIT SEM":
-            print 'end:'
-            print 'movl $1, %eax'
-            print 'movl $0, %ebx'
+            #print 'end:'
+            outputstr.append('end:')
+            #print 'movl $1, %eax'
+            outputstr.append('movl $1, %eax')
+            #print 'movl $0, %ebx'
+            outputstr.append('movl $0, %ebx')
             words_stack.append({'name':act[0]})
 
         elif expression == "p -> INT ID ( ) { expression_list }":
-            print 'int $0x80'
+            #print 'int $0x80'
+            outputstr.append('int $0x80')
             #print expression,len(right_exp)
             words_stack.append({'name':act[0]})
 
@@ -326,6 +359,8 @@ while True:
         print act
         exit()
 
+for v in outputstr:
+    print v
 
 for s in out_strings:
     print s
