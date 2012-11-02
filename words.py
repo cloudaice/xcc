@@ -48,7 +48,7 @@ def analysis_line(line,word_list):
                 j += 1
             elif c in ['&','\"','i','f','e','r','+','-','*','/','>','<','=',',',';','(',')','[',']','{','}']:
                 render = {'"':5,'i':7,'f':11,'e':19,'r':27,'+':34,'-':35,
-                        '*':36,'/':37,'>':38,'<':40,'=':44,',':47,';':48,
+                        '*':36,'/':37,'>':38,'<':41,'=':44,',':47,';':48,
                         '(':49,')':50,'[':51,']':52,'{':53,'}':54,'&':55 }
                 state = render[c]
                 j += 1
@@ -163,6 +163,7 @@ def analysis_line(line,word_list):
                 state = 1
         elif  state == 18:
             word_list.append(('IF',line[i:j]) )
+            i = j
             state = 0
         elif  state == 19:
             if line[j] == 'l':
@@ -373,8 +374,8 @@ if __name__ == "__main__":
     analysis_file(filename,all_words)
     ids = []
     for word in all_words:
-        ids.append(word[0])
-        #print word
-    line = ' '.join(ids)
-    print line
+        #ids.append(word[0])
+        print word
+    #line = ' '.join(ids)
+    #print line
 

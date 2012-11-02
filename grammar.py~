@@ -1,0 +1,154 @@
+#-*-coding:utf-8 -*-
+import read_table
+import words
+
+action_table = read_table.action
+goto_table = read_table.goto
+words =  words.get_words_list()
+
+expressions = []
+#ids = [ word[0] for word in words]
+#ids.append('$')
+#stream =  ids
+stream = [list(word) for word in words]
+stream.append(['$',])
+state_stack = ['0']
+words_stack = []
+f_table = {}
+index = 0
+
+
+
+while True:
+    word = stream[index][0]
+    acter = action_table[state_stack[-1]][word]
+    act = acter.strip().split(' ')
+    if act[0] == 'shift':
+        state_stack.append(act[1])
+        words_stack.append({'name':stream[index][0],'value':stream[index][1]})
+        index += 1
+    elif act[0] == 'reduce':
+        act = ' '.join(act[1:])
+        expression = act.strip()
+        act = act.strip().split('->')
+        act[0] = act[0].strip()
+        act[1] = act[1].strip()
+        act[1] = act[1].split(' ')
+        right_exp = []
+        while act[1]:
+            act[1].pop()
+            #print words_stack[-1]['name'],words_stack[-1]['value']
+            right_exp.append(words_stack.pop())
+            state_stack.pop()
+        if expression == "type -> INT":
+
+        elif expression == 
+"type -> INT":lambda x:f_table['type'] = 'int',
+"declarator -> ID [ DIGIT ]":lambda a,b,c,d:f_table['declarator'] = a,
+"digit_list -> DIGIT":lambda x:f_table['digit_list'] = [x,],
+"digit_list -> digit_list DOT DIGIT":lambda a,b,c:f_table['digit_list'] = f_table['digit_list'] + [c],
+"declarator_e -> type declarator = { digit_list } SEM":lambda:f1(), #####
+"expression -> declarator_e":lambda :pass,
+"expression_list -> expression":lambda:pass,
+"expression_list -> expression_list expression":lambda:pass,
+"declarator -> ID":lambda x,f_table['declarator'] = x,
+"declarator_list -> declarator":lambda:f_table['declarator_list'] = [f_table['declarator'],],
+"declarator_e -> type declarator_list SEM":lambda:f2(),####
+"type -> FLOAT":lambda x:f_table['type'] = 'float',
+"declarator_list -> declarator_list DOT declarator":lambda a,b,c: f_table['declarator_list'] = f_table['declarator_list'] +[f_table['declarator],]
+"func_e -> ID ( STR ) SEM":lambda:f3(), ####
+"expression -> func_e":lambda:pass,
+"func_e -> ID ( STR DOT AND ID ) SEM":lambda:f4()
+"cast_e -> DIGIT":lambda x:f_table['cast_e'] = x,
+"multi_e -> cast_e":lambda:f_table['multi_e'] = f_table['cast_e'],
+"add_e -> multi_e":lambda:f_table['add_e'] = f_table['multi_e'],
+"assignment_e -> declarator = add_e SEM":lambda
+"expression -> assignment_e":lambda:pass,
+"cast_e -> declarator":lambda x:f_table['cast_e'] = f_table['declarator'],
+"bool_e -> cast_e > cast_e":lambda:f_table['bool_e'] = 'true',
+"inc_e -> ID INC":lambda:f_table['inc_e'] = x,
+"cast_e -> ID [ ID ]":lambda:f_table['cast_e'] = x,
+"multi_e -> multi_e * cast_e":lambda:pass
+"add_e -> add_e + multi_e":lambda:pass
+"iterator_e -> FOR ( assignment_e bool_e SEM inc_e ) { expression_list }":lambda
+"expression -> iterator_e":lambda
+"multi_e -> multi_e / cast_e":lambda
+"bool_e -> cast_e >= cast_e":lambda
+"add_e -> add_e - multi_e":lambda
+"func_e -> ID ( STR DOT declarator_list ) SEM":lambda
+"select_e -> IF ( bool_e ) { expression_list } ELSE { expression_list }":lambda
+"expression -> select_e":lambda
+"expression -> RETURN DIGIT SEM":lambda
+"p -> INT ID ( ) { expression_list }":lambda
+        words_stack.append({'name':act[0],'value':'none'})
+        if goto_table[state_stack[-1]][words_stack[-1]['name']] == 'error':
+            print 'goto error'
+            exit()
+        goto_state = goto_table[state_stack[-1]][words_stack[-1]['name']]
+        state_stack.append(goto_state)
+        expressions.append(expression)
+    elif act[0] == 'accept':
+        print 'accept'
+        break
+    elif act[0] == 'error':
+        print 'action error'
+        print act
+        exit()
+    else:
+        print 'unkown error'
+        print act
+        exit()
+
+
+for v in expressions:
+    print v
+
+"""
+ex = []
+for v in expressions:
+    if v not in ex:
+        print '\"'+v+'\":lambda'
+    ex.append(v)
+
+def f1():
+    
+deal_exp{
+"type -> INT":lambda x:f_table['type'] = 'int',
+"declarator -> ID [ DIGIT ]":lambda a,b,c,d:f_table['declarator'] = a,
+"digit_list -> DIGIT":lambda x:f_table['digit_list'] = [x,],
+"digit_list -> digit_list DOT DIGIT":lambda a,b,c:f_table['digit_list'] = f_table['digit_list'] + [c],
+"declarator_e -> type declarator = { digit_list } SEM":lambda:f1(), #####
+"expression -> declarator_e":lambda :pass,
+"expression_list -> expression":lambda:pass,
+"expression_list -> expression_list expression":lambda:pass,
+"declarator -> ID":lambda x,f_table['declarator'] = x,
+"declarator_list -> declarator":lambda:f_table['declarator_list'] = [f_table['declarator'],],
+"declarator_e -> type declarator_list SEM":lambda:f2(),####
+"type -> FLOAT":lambda x:f_table['type'] = 'float',
+"declarator_list -> declarator_list DOT declarator":lambda a,b,c: f_table['declarator_list'] = f_table['declarator_list'] +[f_table['declarator],]
+"func_e -> ID ( STR ) SEM":lambda:f3(), ####
+"expression -> func_e":lambda:pass,
+"func_e -> ID ( STR DOT AND ID ) SEM":lambda:f4()
+"cast_e -> DIGIT":lambda x:f_table['cast_e'] = x,
+"multi_e -> cast_e":lambda:f_table['multi_e'] = f_table['cast_e'],
+"add_e -> multi_e":lambda:f_table['add_e'] = f_table['multi_e'],
+"assignment_e -> declarator = add_e SEM":lambda
+"expression -> assignment_e":lambda:pass,
+"cast_e -> declarator":lambda x:f_table['cast_e'] = f_table['declarator'],
+"bool_e -> cast_e > cast_e":lambda:f_table['bool_e'] = 'true',
+"inc_e -> ID INC":lambda:f_table['inc_e'] = x,
+"cast_e -> ID [ ID ]":lambda:f_table['cast_e'] = x,
+"multi_e -> multi_e * cast_e":lambda:pass
+"add_e -> add_e + multi_e":lambda:pass
+"iterator_e -> FOR ( assignment_e bool_e SEM inc_e ) { expression_list }":lambda
+"expression -> iterator_e":lambda
+"multi_e -> multi_e / cast_e":lambda
+"bool_e -> cast_e >= cast_e":lambda
+"add_e -> add_e - multi_e":lambda
+"func_e -> ID ( STR DOT declarator_list ) SEM":lambda
+"select_e -> IF ( bool_e ) { expression_list } ELSE { expression_list }":lambda
+"expression -> select_e":lambda
+"expression -> RETURN DIGIT SEM":lambda
+"p -> INT ID ( ) { expression_list }":lambda
+}
+"""
