@@ -2,10 +2,12 @@
 import read_table
 import words
 import string
+import sys
 
 action_table = read_table.action
 goto_table = read_table.goto
-words =  words.get_words_list()
+filename = sys.argv[1]
+words =  words.get_words_list(filename)
 
 expressions = []
 #ids = [ word[0] for word in words]

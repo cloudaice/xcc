@@ -362,9 +362,9 @@ def analysis_file(filename,word_list):
     for line in fd.readlines():
         analysis_line(line,word_list)
 
-def get_words_list():
+def get_words_list(filename):
     all_words = []
-    analysis_file('test/test.c',all_words)
+    analysis_file(filename,all_words)
     return all_words
 
 
