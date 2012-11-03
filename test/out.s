@@ -227,7 +227,7 @@ L59:
 movl $1, %eax
 movl $0, %ebx
 int $0x80
-msg0: .asciz "please input your student number:"
+msg0: .string "please input your student number:"
 msg1: .asciz "%d"
 msg2: .asciz "mean is%d > 70\n"
 msg3: .asciz "mean is%d\n < 70"

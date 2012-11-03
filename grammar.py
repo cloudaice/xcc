@@ -74,9 +74,8 @@ while True:
                 outputstr.append('subl $' + str(mem_size) + ',%esp')
                 for i in range(int(right_exp[1]['size'])):
                     #print 'movl $'+ str(i) +',%ebx'
-                    outputstr.append('movl $'+ str(i) +',%ebx'
-                    #print 'movl $'+ right_exp[4]['value'][i] + ', -' + \
-                    #        str(f_table['addr']) + '(%ebp,%ebx,4)'
+                    outputstr.append('movl $'+ str(i) +',%ebx')
+                    #print 'movl $'+ right_exp[4]['value'][i] + ', -' + str(f_table['addr']) + '(%ebp,%ebx,4)'
                     outputstr.append('movl $'+ right_exp[4]['value'][i] + ', -' + \
                             str(f_table['addr']) + '(%ebp,%ebx,4)')
 
@@ -119,8 +118,8 @@ while True:
         elif expression == "func_e -> ID ( STR ) SEM":
             words_stack.append({'name':act[0]})
             if right_exp[0]['value'] == 'printf':
-                #print '.LC' + str(f_table['label']) + ':\n.string ' + right_exp[2]['value']
-                out_strings.append('.LC' + str(f_table['label']) + ': .string ' + right_exp[2]['value'])
+                #print 'LC' + str(f_table['label']) + ':\n.string ' + right_exp[2]['value']
+                out_strings.append('LC' + str(f_table['label']) + ': .string ' + right_exp[2]['value'])
                 #print 'pushl $LC' + str(f_table['label'])
                 outputstr.append('pushl $LC' + str(f_table['label']))
                 f_table['label'] += 1
@@ -140,8 +139,8 @@ while True:
                 outputstr.append('leal -' + str(f_table[right_exp[5]['value']])+'(%ebp),%eax')
                 #print 'pushl %eax'
                 outputstr.append('pushl %eax')
-                #print '.LC' + str(f_table['label']) + ':\n.string ' + right_exp[2]['value']
-                out_strings.append('.LC' + str(f_table['label']) + ': .string ' + right_exp[2]['value'])
+                #print 'LC' + str(f_table['label']) + ':\n.string ' + right_exp[2]['value']
+                out_strings.append('LC' + str(f_table['label']) + ': .string ' + right_exp[2]['value'])
                 #print 'pushl $LC' + str(f_table['label'])
                 outputstr.append('pushl $LC' + str(f_table['label']))
                 f_table['label'] += 1
@@ -166,7 +165,8 @@ while True:
                 outputstr.append('movl $' + right_exp[2]['value'] + ',-' + str(f_table[right_exp[0]['value']]) + '(%ebp)')
             elif right_exp[2]['type'] == 'array':
                 #print 'movl ' + f_table[right_exp[2]['value']] + ',-' + str(f_table[right_exp[0]['value']]) + '(%ebp)'
-                outputstr.append('movl ' + f_table[right_exp[2]['value']] + ',-' + str(f_table[right_exp[0]['value']]) + '(%ebp)')
+                outputstr.append('movl ' + f_table[right_exp[2]['value']] + ',%eax')
+                outputstr.append('movl %eax,' + '-' + str(f_table[right_exp[0]['value']]) + '(%ebp)')
             else:
                 print 'error'
 
@@ -213,7 +213,7 @@ while True:
         elif expression == "multi_e -> multi_e * cast_e":
             #print right_exp[0]['value'],right_exp[2]['value']
             #print 'movl ' + str(f_table[right_exp[0]['value']]) + ',%eax'
-            output.append('movl ' + str(f_table[right_exp[0]['value']]) + ',%eax')
+            outputstr.append('movl ' + str(f_table[right_exp[0]['value']]) + ',%eax')
             #print 'movl ' + str(f_table[right_exp[2]['value']]) + ',%ebx'
             outputstr.append('movl ' + str(f_table[right_exp[2]['value']]) + ',%ebx')
             #print 'mull %ebx'
@@ -239,6 +239,7 @@ while True:
 
         elif expression == "iterator_e -> FOR ( assignment_e bool_e SEM inc_e ) { expression_list }":
             #print right_exp[5]['value']
+            outputstr.append(right_exp[5]['value'])
             #print 'jmp start_for'
             outputstr.append('jmp start_for')
             #print 'end_for:'
@@ -255,7 +256,7 @@ while True:
             #print 'movl -' + str(f_table[right_exp[2]['value']]) +'(%ebp)' + ',%ebx'
             outputstr.append('movl -' + str(f_table[right_exp[2]['value']]) +'(%ebp)' + ',%ebx')
             #print 'divl %ebx'
-            outputstr.append('divl %ebx')`
+            outputstr.append('divl %ebx')
             #print 'movl %eax,' + 'tmp' + str(f_table['tmp'])
             outputstr.append('movl %eax,' + 'tmp' + str(f_table['tmp']))
             words_stack.append({'name':act[0],'value':'multi_e','type':'array'})
@@ -299,10 +300,10 @@ while True:
                 #print 'pushl -' + str(f_table[v]) +'(%ebp)'
                 outputstr.append('pushl -' + str(f_table[v]) +'(%ebp)')
             count = len(right_exp[4]['value']) + 1
-            #print '.LC' + str(f_table['label']) + ':\n.string ' + right_exp[2]['value']
-            out_strings.append('.LC' + str(f_table['label']) + ': .string ' + right_exp[2]['value'])
-            #print 'pushl .LC' + str(f_table['label'])
-            outputstr.append('pushl .LC' + str(f_table['label']))
+            #print 'LC' + str(f_table['label']) + ':\n.string ' + right_exp[2]['value']
+            out_strings.append('LC' + str(f_table['label']) + ': .string ' + right_exp[2]['value'])
+            #print 'pushl LC' + str(f_table['label'])
+            outputstr.append('pushl $LC' + str(f_table['label']))
             f_table['label'] += 1
             #print 'call printf'
             outputstr.append('call printf')
@@ -359,13 +360,24 @@ while True:
         print act
         exit()
 
+startstr= ['.section .data']
+for i in range(f_table['tmp']):
+    startstr.append('tmp'+str(i) + ': .int 0')
+startstr.append('.section .text')
+startstr.append('.globl main')
+startstr += ['main:','pushl %ebp','movl %esp, %ebp']
+for v in startstr:
+    print v
 for v in outputstr:
     print v
-
 for s in out_strings:
     print s
-for k,v in f_table.items():
-    print k,v
+result = startstr + outputstr + out_strings
+fd = open('out.s','a')
+for v in result:
+    fd.write(v + '\n')
+#for k,v in f_table.items():
+#    print k,v
 #for v in expressions:
 #    print v
 

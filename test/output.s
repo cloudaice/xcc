@@ -1,6 +1,5 @@
 .section .data
 cpma: .int 0
-.section .rodata
 .section .text
 .globl   main
 main:
