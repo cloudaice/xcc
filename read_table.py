@@ -1,5 +1,5 @@
 #-*-coding:utf-8 -*-
-actionfd = open('action','r')
+actionfd = open('lib/action','r')
 action = {}
 for line in actionfd.readlines():
     line = line.strip().split(':')
@@ -9,7 +9,7 @@ for line in actionfd.readlines():
     except:
         action[k1] = {}
         action[k1][k2] = line[1]
-gotofd = open('goto','r')
+gotofd = open('lib/goto','r')
 goto = {}
 for line in gotofd.readlines():
     line = line.strip().split(':')

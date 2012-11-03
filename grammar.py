@@ -119,7 +119,7 @@ while True:
             words_stack.append({'name':act[0]})
             if right_exp[0]['value'] == 'printf':
                 #print 'LC' + str(f_table['label']) + ':\n.string ' + right_exp[2]['value']
-                out_strings.append('LC' + str(f_table['label']) + ': .string ' + right_exp[2]['value'])
+                out_strings.append('LC' + str(f_table['label']) + ': .asciz ' + right_exp[2]['value'])
                 #print 'pushl $LC' + str(f_table['label'])
                 outputstr.append('pushl $LC' + str(f_table['label']))
                 f_table['label'] += 1
@@ -140,7 +140,7 @@ while True:
                 #print 'pushl %eax'
                 outputstr.append('pushl %eax')
                 #print 'LC' + str(f_table['label']) + ':\n.string ' + right_exp[2]['value']
-                out_strings.append('LC' + str(f_table['label']) + ': .string ' + right_exp[2]['value'])
+                out_strings.append('LC' + str(f_table['label']) + ': .asciz ' + right_exp[2]['value'])
                 #print 'pushl $LC' + str(f_table['label'])
                 outputstr.append('pushl $LC' + str(f_table['label']))
                 f_table['label'] += 1
@@ -251,6 +251,7 @@ while True:
             words_stack.append({'name':act[0]})
 
         elif expression == "multi_e -> multi_e / cast_e":
+            outputstr.append('movl $0, %edx')
             #print 'movl -' + str(f_table[right_exp[0]['value']]) +'(%ebp)' + ',%eax'
             outputstr.append('movl -' + str(f_table[right_exp[0]['value']]) +'(%ebp)' + ',%eax')
             #print 'movl -' + str(f_table[right_exp[2]['value']]) +'(%ebp)' + ',%ebx'
@@ -296,12 +297,13 @@ while True:
 
         elif expression == "func_e -> ID ( STR DOT declarator_list ) SEM":
             #print right_exp[4]
+            right_exp[4]['value'].reverse()
             for v in right_exp[4]['value']:
                 #print 'pushl -' + str(f_table[v]) +'(%ebp)'
                 outputstr.append('pushl -' + str(f_table[v]) +'(%ebp)')
             count = len(right_exp[4]['value']) + 1
             #print 'LC' + str(f_table['label']) + ':\n.string ' + right_exp[2]['value']
-            out_strings.append('LC' + str(f_table['label']) + ': .string ' + right_exp[2]['value'])
+            out_strings.append('LC' + str(f_table['label']) + ': .asciz ' + right_exp[2]['value'])
             #print 'pushl LC' + str(f_table['label'])
             outputstr.append('pushl $LC' + str(f_table['label']))
             f_table['label'] += 1
@@ -366,6 +368,7 @@ for i in range(f_table['tmp']):
 startstr.append('.section .text')
 startstr.append('.globl main')
 startstr += ['main:','pushl %ebp','movl %esp, %ebp']
+out_strings = [string.replace('%f','%d') for string in out_strings ]
 for v in startstr:
     print v
 for v in outputstr:
@@ -381,10 +384,3 @@ for v in result:
 #for v in expressions:
 #    print v
 
-"""
-ex = []
-for v in expressions:
-    if v not in ex:
-        print '\"'+v+'\":lambda'
-    ex.append(v)
-"""

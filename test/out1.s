@@ -88,7 +88,6 @@ movl %eax,-64(%ebp)
 addl $1,-68(%ebp)
 jmp start_for
 end_for:
-movl $0, %edx
 movl -60(%ebp),%eax
 movl -64(%ebp),%ebx
 divl %ebx
@@ -105,8 +104,8 @@ subl %ebx,%eax
 movl %eax,tmp7
 movl tmp7,%eax
 movl %eax,-56(%ebp)
-pushl -56(%ebp)
 pushl -52(%ebp)
+pushl -56(%ebp)
 pushl $LC2
 call printf
 addl $12,%esp
@@ -118,8 +117,8 @@ subl %ebx,%eax
 movl %eax,tmp8
 movl tmp8,%eax
 movl %eax,-56(%ebp)
-pushl -56(%ebp)
 pushl -52(%ebp)
+pushl -56(%ebp)
 pushl $LC3
 call printf
 addl $12,%esp
