@@ -23,7 +23,6 @@ f_table['addr'] = 0
 f_table['label'] = 0
 f_table['tmp'] = 0
 out_strings = []
-
 outputstr = []
 
 while True:
@@ -378,7 +377,8 @@ for v in outputstr:
 for s in out_strings:
     print s
 result = startstr + outputstr + out_strings
-fd = open('out.s','a')
+filename = sys.argv[2]
+fd = open(filename,'a')
 for v in result:
     fd.write(v + '\n')
 #for k,v in f_table.items():
