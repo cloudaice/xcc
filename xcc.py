@@ -2,6 +2,7 @@
 #-*-coding:utf-8-*-
 import os
 import sys
+import grammar
 
 if __name__ == '__main__':
     len_argv = len(sys.argv)
@@ -15,10 +16,16 @@ if __name__ == '__main__':
     elif sys.argv[2] == '-S':
         sourcefile = sys.argv[1]
         resultfile = sys.argv[3]
-        print sourcefile,resultfile,sys.argv[2]
-        os.popen('python grammar.py ' + sourcefile + ' '+ resultfile)
+        try:
+            grammar.do_grammar(sourcefile,resultfile)
+        except:
+            print 'file error'
+            exit()
     elif sys.argv[2] == '-o':
         sourcefile = sys.argv[1]
         resultfile = sys.argv[3]
-        print sourcefile,resultfile,sys.argv[2]
-    tmp = os.popen('ls *.py')
+        try:
+            os.system('gcc ' + sourcefile + ' -o ' + resultfile)
+        except:
+            print 'file error'
+            exit()

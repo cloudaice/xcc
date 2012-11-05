@@ -1,119 +1,134 @@
-	.file	"test.c"
-	.section	.rodata
-	.align 4
-.LC0:
-	.string	"please input your student number:"
-.LC1:
-	.string	"%d"
-	.align 4
-.LC4:
-	.string	"the score of student number %d is %f higher than 60.\n"
-	.align 4
-.LC5:
-    .string	"the score of student number %d is %f lower than 60.\n"
-	.text
-	.globl	main
-	.type	main, @function
+.section .data
+tmp0: .int 0
+tmp1: .int 0
+tmp2: .int 0
+tmp3: .int 0
+tmp4: .int 0
+tmp5: .int 0
+tmp6: .int 0
+tmp7: .int 0
+tmp8: .int 0
+.section .text
+.globl main
 main:
-.LFB0:
-	.cfi_startproc
-	pushl	%ebp
-	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	andl	$-16, %esp
-	subl	$112, %esp
-	movl	$76, 44(%esp)
-	movl	$82, 48(%esp)
-	movl	$90, 52(%esp)
-	movl	$86, 56(%esp)
-	movl	$79, 60(%esp)
-	movl	$62, 64(%esp)
-	movl	$2, 68(%esp)
-	movl	$2, 72(%esp)
-	movl	$1, 76(%esp)
-	movl	$2, 80(%esp)
-	movl	$2, 84(%esp)
-	movl	$3, 88(%esp)
-	movl	$.LC0, %eax
-	movl	%eax, (%esp)
-	call	printf
-	movl	$.LC1, %eax
-	leal	92(%esp), %edx
-	movl	%edx, 4(%esp)
-	movl	%eax, (%esp)
-	call	__isoc99_scanf
-	movl	$0x00000000, %eax
-	movl	%eax, 96(%esp)
-	movl	$0, 100(%esp)
-	movl	$0, 104(%esp)
-	jmp	.L2
-.L3:
-	movl	104(%esp), %eax
-	movl	44(%esp,%eax,4), %edx
-	movl	104(%esp), %eax
-	movl	68(%esp,%eax,4), %eax
-	imull	%edx, %eax
-	movl	%eax, 28(%esp)
-	fildl	28(%esp)
-	flds	96(%esp)
-	faddp	%st, %st(1)
-	fstps	96(%esp)
-	movl	104(%esp), %eax
-	movl	68(%esp,%eax,4), %eax
-	addl	%eax, 100(%esp)
-	addl	$1, 104(%esp)
-.L2:
-	cmpl	$5, 104(%esp)
-	jle	.L3
-	fildl	100(%esp)
-	flds	96(%esp)
-	fdivp	%st, %st(1)
-	fstps	108(%esp)
-	flds	108(%esp)
-	flds	.LC3
-	fxch	%st(1)
-	fucomip	%st(1), %st
-	fstp	%st(0)
-	setae	%al
-	testb	%al, %al
-	je	.L4
-	flds	108(%esp)
-	flds	.LC3
-	fsubrp	%st, %st(1)
-	fstps	108(%esp)
-	flds	108(%esp)
-	movl	92(%esp), %edx
-	movl	$.LC4, %eax
-	fstpl	8(%esp)
-	movl	%edx, 4(%esp)
-	movl	%eax, (%esp)
-	call	printf
-	jmp	.L5
-.L4:
-	flds	.LC3
-	fsubs	108(%esp)
-	fstps	108(%esp)
-	flds	108(%esp)
-	movl	92(%esp), %edx
-	movl	$.LC5, %eax
-	fstpl	8(%esp)
-	movl	%edx, 4(%esp)
-	movl	%eax, (%esp)
-	call	printf
-.L5:
-	movl	$0, %eax
-	leave
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
-	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.section	.rodata
-	.align 4
-.LC3:
-	.long	1114636288
-	.ident	"GCC: (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3"
-	.section	.note.GNU-stack,"",@progbits
+pushl %ebp
+movl %esp, %ebp
+subl $24,%esp
+movl $0,%ebx
+movl $76, -24(%ebp,%ebx,4)
+movl $1,%ebx
+movl $82, -24(%ebp,%ebx,4)
+movl $2,%ebx
+movl $90, -24(%ebp,%ebx,4)
+movl $3,%ebx
+movl $86, -24(%ebp,%ebx,4)
+movl $4,%ebx
+movl $79, -24(%ebp,%ebx,4)
+movl $5,%ebx
+movl $62, -24(%ebp,%ebx,4)
+subl $24,%esp
+movl $0,%ebx
+movl $2, -48(%ebp,%ebx,4)
+movl $1,%ebx
+movl $2, -48(%ebp,%ebx,4)
+movl $2,%ebx
+movl $1, -48(%ebp,%ebx,4)
+movl $3,%ebx
+movl $2, -48(%ebp,%ebx,4)
+movl $4,%ebx
+movl $2, -48(%ebp,%ebx,4)
+movl $5,%ebx
+movl $3, -48(%ebp,%ebx,4)
+subl $4,%esp
+subl $4,%esp
+subl $4,%esp
+subl $4,%esp
+subl $4,%esp
+pushl $LC0
+call printf
+addl $4,%esp
+leal -52(%ebp),%eax
+pushl %eax
+pushl $LC1
+call scanf
+addl $8,%esp
+movl $0,-60(%ebp)
+movl $0,-64(%ebp)
+movl $0,-68(%ebp)
+start_for:
+movl -68(%ebp), %eax
+movl $6,%ebx
+cmp %ebx,%eax
+jae end_for
+movl -68(%ebp),%edx
+movl -24(%ebp,%edx,4), %eax
+movl %eax, tmp0
+movl -68(%ebp),%edx
+movl -48(%ebp,%edx,4), %eax
+movl %eax, tmp1
+movl tmp0,%eax
+movl tmp1,%ebx
+mull %ebx
+movl %eax,tmp2
+movl -60(%ebp),%eax
+movl tmp2,%ebx
+addl %ebx,%eax
+movl %eax,tmp3
+movl tmp3,%eax
+movl %eax,-60(%ebp)
+movl -68(%ebp),%edx
+movl -48(%ebp,%edx,4), %eax
+movl %eax, tmp4
+movl -64(%ebp),%eax
+movl tmp4,%ebx
+addl %ebx,%eax
+movl %eax,tmp5
+movl tmp5,%eax
+movl %eax,-64(%ebp)
+addl $1,-68(%ebp)
+jmp start_for
+end_for:
+movl $0, %edx
+movl -60(%ebp),%eax
+movl -64(%ebp),%ebx
+divl %ebx
+movl %eax,tmp6
+movl tmp6,%eax
+movl %eax,-56(%ebp)
+movl -56(%ebp),%eax
+movl $60, %ebx
+cmp %ebx, %eax
+jb else
+movl -56(%ebp),%eax
+movl $60,%ebx
+subl %ebx,%eax
+movl %eax,tmp7
+movl tmp7,%eax
+movl %eax,-56(%ebp)
+pushl -56(%ebp)
+pushl -52(%ebp)
+pushl $LC2
+call printf
+addl $12,%esp
+jmp end
+else:
+movl $60,%eax
+movl -56(%ebp),%ebx
+subl %ebx,%eax
+movl %eax,tmp8
+movl tmp8,%eax
+movl %eax,-56(%ebp)
+pushl -56(%ebp)
+pushl -52(%ebp)
+pushl $LC3
+call printf
+addl $12,%esp
+jmp end
+end:
+movl $1, %eax
+movl $0, %ebx
+int $0x80
+LC0: .asciz "please input your student number:"
+LC1: .asciz "%d"
+LC2: .asciz "the score of student number %d is %d higher than 60.\n"
+LC3: .asciz "the score of student number %d is %d lower than 60.\n"
