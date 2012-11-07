@@ -20,7 +20,7 @@ for line in gotofd.readlines():
         goto[k1] = {}
         goto[k1][k2] = line[1]
 
-#print action['47']['ID']
+#print action['2']['ID']
 #print action['52']['INT']
 #print goto['0']['expression_list']
 #print goto['6']['expression_list']

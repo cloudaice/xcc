@@ -354,7 +354,7 @@ def analysis_line(line,word_list):
             state = 0
         elif state == 57:
             word_list.append(('INC',line[i:j]))
-            i = j 
+            i = j
             state = 0
 
 def analysis_file(filename,word_list):
